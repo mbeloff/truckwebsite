@@ -1,11 +1,21 @@
 i<template>
-  <vue-navigation-bar :options="navbarOptions" />
+  <vue-navigation-bar
+    :options="navbarOptions"
+    @vnb-item-clicked="vnbItemClicked"
+  />
 </template>
 
 <script>
 import "vue-navigation-bar/dist/vue-navigation-bar.css";
 
 export default {
+  methods: {
+    vnbItemClicked(text) {
+      if (text === "Book") {
+        this.$modal.show("modal");
+      }
+    }
+  },
   data() {
     return {
       navbarOptions: {
@@ -86,14 +96,11 @@ export default {
         ],
         menuOptionsRight: [
           {
-            type: "link",
-            text: "1800 12 34 56"
-          },
-          {
+            isLinkAction: true,
             type: "button",
-            text: "Book Now",
+            text: "Book",
+            path: "",
             class: "btn btn-book",
-            path: { name: "login" },
             iconRight: '<i class="fal fa-comment-alt-lines fa-fw"></i>'
           }
         ]
@@ -106,11 +113,12 @@ export default {
 <style lang="scss">
 @import "/path/to/node_modules/vue-navigation-bar.css";
 .vnb {
+  text-align: left;
   .btn-book {
-    background: #1a6aff;
+    background: #00c4a3;
     color: white;
     &:hover {
-      background: darken(#1a6aff, 10%);
+      background: darken(#00c4a3, 10%);
       color: white;
     }
   }

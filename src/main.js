@@ -8,8 +8,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import VueNavigationBar from "vue-navigation-bar";
 Vue.component("vue-navigation-bar", VueNavigationBar);
-
+import VModal from "vue-js-modal";
+Vue.use(VModal);
 Vue.config.productionTip = false;
+import VCalendar from "v-calendar";
+Vue.use(VCalendar, {});
 
 new Vue({
   created() {

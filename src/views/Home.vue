@@ -3,7 +3,7 @@
     <div class="home d-flex flex-column flex-center py-5">
       <div class="container my-auto">
         <h1 class="big-title font-weight-bold text-left d-inline-block">
-          Moving. <br />Just Easier.
+          Moving. <br />Made Easier.
         </h1>
       </div>
     </div>
@@ -24,7 +24,7 @@
             praesentium!
           </p>
         </div>
-        <div class="col-12 col-md-6 my-auto">
+        <div class="col-12 col-md-6 mb-5 my-md-auto">
           <img class="img-fluid" src="../assets/truck.jpg" alt="" />
         </div>
       </div>
@@ -38,49 +38,50 @@
           >
             <img
               class="rounded-circle bg-white circle-shadow m-auto position-absolute"
-              src="../assets/drawkit/VAN.svg"
+              src="../assets/drawkit/DRIVER.svg"
               alt=""
               style="left: 0; bottom: 0; height: 200px; width: 200px;"
             />
           </div>
-          <div class="d-flex flex-row flex-md-column card-body">
+          <div class="card-body">
             <div>
-              <h3 class="py-3 text-left text-md-center">Do it yourself</h3>
-              <p class="text-left text-md-justify">
+              <h3 class="py-3 text-left text-md-center">Let Us Drive</h3>
+              <p class="text-left">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Numquam debitis consectetur vel labore atque consequuntur.
               </p>
             </div>
-            <a
+            <!-- <a
               href=""
-              class="btn btn-white btn-grad position-absolute px-5 text-uppercase"
+              class="btn btn-grad position-absolute px-5 text-uppercase"
               >Quote</a
-            >
+            > -->
           </div>
         </div>
-        <div class="card position-relative">
+        <div class="card card-special position-relative">
           <div
             class="img-wrapper m-auto position-relative"
             style="width: 100%; height: 100px; max-width: 200px;"
           >
             <img
               class="rounded-circle bg-white circle-shadow m-auto position-absolute"
-              src="../assets/drawkit/DRIVER.svg"
+              src="../assets/drawkit/VAN.svg"
               alt=""
               style="left: 0; bottom: 0; height: 200px; width: 200px;"
             />
           </div>
-          <div class="d-flex flex-row flex-md-column card-body">
+          <div class="card-body">
             <div>
-              <h3 class="py-3 text-left text-md-center">Let Us Drive</h3>
-              <p class="text-left text-md-justify">
+              <h3 class="py-3 text-left text-md-center">Do it yourself</h3>
+              <p class="text-left">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Numquam debitis consectetur vel labore atque consequuntur.
               </p>
             </div>
             <a
-              href=""
-              class="btn btn-grad position-absolute px-5 text-uppercase"
+              href="javascript:void(0)"
+              class="btn btn-white btn-grad position-absolute px-5 text-uppercase"
+              @click="show()"
               >Quote</a
             >
           </div>
@@ -97,19 +98,19 @@
               style="left: 0; bottom: 0; height: 200px; width: 200px;"
             />
           </div>
-          <div class="d-flex flex-row flex-md-column card-body">
+          <div class="card-body">
             <div>
               <h3 class="py-3 text-left text-md-center">Help Packing?</h3>
-              <p class="text-left text-md-justify">
+              <p class="text-left">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Numquam debitis consectetur vel labore atque consequuntur.
               </p>
             </div>
-            <a
+            <!-- <a
               href=""
               class="btn btn-white btn-grad position-absolute px-5 text-uppercase"
               >Quote</a
-            >
+            > -->
           </div>
         </div>
       </div>
@@ -155,7 +156,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid bg-light py-5">
+    <div class="py-5">
       <div class="container text-left">
         <h2 class="title">Our Vehicles</h2>
         <h4 class="sub-title font-italic">
@@ -164,9 +165,10 @@
         <div class="row">
           <div class="py-3 col-12 col-md-6">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
-              doloribus vel maiores exercitationem, quam velit, excepturi sequi
-              blanditiis possimus officia eos iste labore, fugiat repudiandae.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem earum, magni animi, sed recusandae sit mollitia,
+              libero voluptatem qui eligendi fuga officia rerum! Quibusdam nam
+              numquam quae totam atque nisi?
             </p>
             <ul class="" style="font-size: 1.25rem">
               <li>lorem</li>
@@ -190,7 +192,15 @@
 // @ is an alias to /src
 
 export default {
-  name: "Home"
+  name: "Home",
+  methods: {
+    show() {
+      this.$modal.show("modal");
+    },
+    hide() {
+      this.$modal.hide("modal");
+    }
+  }
 };
 </script>
 <style lang="scss">
@@ -199,8 +209,8 @@ export default {
   max-height: 100vh;
   background-image: linear-gradient(
       to right,
-      rgba(255, 171, 44, 0.384),
-      rgba(255, 0, 0, 0.377)
+      #ffab2c62,
+      rgba(255, 72, 0, 0.404)
     ),
     url("../assets/drawkit/DRIVER.svg");
   background-size: contain;
@@ -210,18 +220,21 @@ export default {
 
 .big-title {
   color: rgb(255, 255, 255);
-  font-size: calc(40px + (140 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .title {
-  color: var(--primary);
-  font-weight: 600;
+  color: var(--dark-color);
+  // font-weight: 600;
+  font-variation-settings: "wght" 800;
   font-size: 2.5rem;
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .sub-title {
-  color: var(--dark-color);
+  color: var(--primary);
   font-weight: 600;
+  font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .intro-text {
@@ -253,17 +266,9 @@ export default {
   }
 }
 
-.card {
-  background-color: rgb(253, 251, 234) !important;
-}
-
-.card-bg {
-  background: #354458;
-}
-
 .card-wrapper {
   margin: auto;
-  max-width: 1200px;
+  max-width: 1000px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
@@ -273,6 +278,25 @@ export default {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
   }
+}
+
+.card {
+  background-color: rgb(253, 251, 234) !important;
+}
+
+.card-special {
+  position: absolute;
+  border: 1px solid var(--primary) !important;
+  font-size: 1.1rem;
+  height: 115%;
+  top: -7.5%;
+  @media only screen and (max-width: 676px) {
+    grid-row: 1/2;
+  }
+}
+
+.card-bg {
+  background: #354458;
 }
 
 .circle-shadow {
@@ -285,7 +309,7 @@ export default {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
-  grid-gap: 10rem;
+  grid-gap: 5rem;
   @media only screen and (min-width: 768px) {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
