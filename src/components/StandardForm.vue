@@ -112,13 +112,12 @@
             <input
               class="mr-2 ml-2 my-auto"
               type="checkbox"
-              name="isOver21"
-              id="isOver21"
+              name="ageCheck"
+              id="ageCheck"
               required
-              value="isOver21"
-              v-model="form.age"
+              v-model="form.ageCheck"
             />
-            <label for="over" class="my-auto"
+            <label for="ageCheck" class="my-auto"
               >I am over 21 years old and hold a valid open drivers
               licence</label
             >
