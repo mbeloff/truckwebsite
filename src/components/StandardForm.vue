@@ -71,7 +71,7 @@
 
           <select
             class="form-control"
-            name="topic"
+            name="location"
             required
             aria-label="Pickup Location"
             value=""
@@ -112,9 +112,10 @@
             <input
               class="mr-2 ml-2 my-auto"
               type="checkbox"
-              id="over"
+              name="age"
+              id="isOver21"
               required
-              value="over"
+              value="isOver21"
               v-model="form.age"
             />
             <label for="over" class="my-auto"
@@ -130,12 +131,12 @@
           <label class="sr-only">Drivers Licence Number</label>
           <input
             class="form-control"
-            type="tel"
+            type="text"
             placeholder="Licence #"
             aria-label="Your phone number"
-            name="number"
+            name="DlNumber"
             required
-            v-model="form.DLnumber"
+            v-model="form.DlNumber"
             autocomplete="off"
           /><i class="form-icon fal fa-hashtag"></i>
         </div>
@@ -143,13 +144,13 @@
         <div class="col-md-4 form-group position-relative">
           <div class="form-control my-0 py-0">
             <v-date-picker
-              id="DLexp"
+              id="DlExpiry"
               class="date-picker"
+              name="DlExpiry"
               :popover="{ placement: 'bottom' }"
               :min-date="new Date()"
               :max-date="new Date(new Date().getFullYear() + 10, 1, 1)"
-              value="licence Expiry"
-              v-model="form.DLexp"
+              v-model="form.DlExpiry"
               @input="formatExp"
               required
               readonly="true"
@@ -166,11 +167,11 @@
         <div class="col-md-4 form-group">
           <select
             class="form-control"
-            name="topic"
+            name="DlState"
             required
             aria-invalid="false"
             aria-label="Drivers Licence State"
-            v-model="form.DLstate"
+            v-model="form.DlState"
           >
             <option value="" disabled="disabled" selected="selected"
               >Licence State</option
@@ -213,15 +214,15 @@
 
       <div class="row">
         <div class="col-md-12 form-group g-mb-40">
-          <label class="sr-only">Enter your question here</label>
+          <label class="sr-only">Enter additional comments here</label>
 
           <textarea
             class="form-control"
             rows="4"
-            placeholder="Please enter any additional questions or requests here ..."
+            placeholder="Please enter any additional information or requests here ..."
             aria-label="Type your enquiry here"
-            name="question"
-            v-model="form.question"
+            name="comment"
+            v-model="form.comment"
           ></textarea
           ><i class="form-icon fal fa-comment-alt-lines"></i>
         </div>
@@ -256,12 +257,12 @@ export default {
         this.form.dateRange.end.toString().substring(0, 10);
     },
     formatExp() {
-      this.form.DLexpShort =
-        this.form.DLexp.getDate() +
+      this.form.DlExpiryShort =
+        this.form.DlExpiry.getDate() +
         "/" +
-        this.form.DLexp.getMonth() +
+        this.form.DlExpiry.getMonth() +
         "/" +
-        this.form.DLexp.getFullYear();
+        this.form.DlExpiry.getFullYear();
     },
     hide() {
       this.$store.commit("storeForm", this.form);
