@@ -1,8 +1,10 @@
-i<template>
-  <vue-navigation-bar
-    :options="navbarOptions"
-    @vnb-item-clicked="vnbItemClicked"
-  />
+<template>
+  <div class="container">
+    <vue-navigation-bar
+      :options="navbarOptions"
+      @vnb-item-clicked="vnbItemClicked"
+    />
+  </div>
 </template>
 
 <script>
@@ -11,7 +13,7 @@ import "vue-navigation-bar/dist/vue-navigation-bar.css";
 export default {
   methods: {
     vnbItemClicked(text) {
-      if (text === "Book") {
+      if (text === "Get a Quote") {
         this.$modal.show("modal");
       }
     }
@@ -98,9 +100,9 @@ export default {
           {
             isLinkAction: true,
             type: "button",
-            text: "Book",
+            text: "Get a Quote",
             path: "",
-            class: "btn btn-book",
+            class: "btn btn-grad",
             iconRight: '<i class="fal fa-comment-alt-lines fa-fw"></i>'
           }
         ]
@@ -120,6 +122,23 @@ export default {
     &:hover {
       background: darken(#00c4a3, 10%);
       color: white;
+    }
+  }
+  .btn-grad {
+    color: white !important;
+    background-image: linear-gradient(
+      15deg,
+      var(--primary) 40%,
+      var(--light-color)
+    );
+    background-size: 300%;
+    background-position: 50%;
+    border: none !important;
+    transition: background-position 0.15s ease-in-out;
+    &:hover {
+      background-position: 100%;
+      color: white;
+      border: none !important;
     }
   }
   svg {

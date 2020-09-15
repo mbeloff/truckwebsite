@@ -229,8 +229,7 @@
       <div class="row">
         <div class="col-12">
           <p class="secondary">
-            Do you need someone to drive, or assist with moving? We may be able
-            to help.
+            Do you need someone to drive, or assist with moving? We can help
           </p>
         </div>
         <div class="col-12 col-md-6">
@@ -248,10 +247,10 @@
             class="mr-2 ml-2"
             type="checkbox"
             id="mover"
-            value="Removalist Requested"
+            value="Movers Requested"
             v-model="form.removalistRequest"
           />
-          <label for="mover">Yes, I need help loading</label>
+          <label for="mover">Yes, I need movers</label>
         </div>
       </div>
       <div class="text-right mt-4">

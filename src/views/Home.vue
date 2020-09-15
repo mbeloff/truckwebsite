@@ -3,7 +3,7 @@
     <div class="home d-flex flex-column flex-center py-5">
       <div class="container my-auto">
         <h1 class="big-title font-weight-bold text-left d-inline-block">
-          Moving. <br />Made Easier.
+          Best Truck Deals in Brisbane
         </h1>
       </div>
     </div>
@@ -11,10 +11,10 @@
       <div class="row">
         <div class="col-12 col-md-6 intro-text">
           <h2 class="mb-3 title">
-            Hiring a Truck in Brisbane or Sydney?
+            Moving? Need a Truck?
           </h2>
           <h5 class="sub-title">
-            We have the best rates. Guaranteed.
+            Looking for the best rates on truck rental?
           </h5>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -45,17 +45,18 @@
           </div>
           <div class="card-body">
             <div>
-              <h3 class="py-3 text-left text-md-center">Let Us Drive</h3>
+              <h3 class="py-3 text-left text-md-center">Truck & Driver</h3>
               <p class="text-left">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Numquam debitis consectetur vel labore atque consequuntur.
               </p>
             </div>
-            <!-- <a
-              href=""
-              class="btn btn-grad position-absolute px-5 text-uppercase"
-              >Quote</a
-            > -->
+            <a
+              href="javascript:void(0)"
+              class="btn btn-grad btn-card position-absolute font-weight-bold"
+              @click="show()"
+              >Get a Quote</a
+            >
           </div>
         </div>
         <div class="card card-special position-relative">
@@ -72,7 +73,7 @@
           </div>
           <div class="card-body">
             <div>
-              <h3 class="py-3 text-left text-md-center">Do it yourself</h3>
+              <h3 class="py-3 text-left text-md-center">Truck Rental</h3>
               <p class="text-left">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Numquam debitis consectetur vel labore atque consequuntur.
@@ -80,9 +81,9 @@
             </div>
             <a
               href="javascript:void(0)"
-              class="btn btn-white btn-grad position-absolute px-5 text-uppercase"
+              class="btn btn-grad btn-card position-absolute font-weight-bold"
               @click="show()"
-              >Quote</a
+              >Get a Quote</a
             >
           </div>
         </div>
@@ -100,17 +101,18 @@
           </div>
           <div class="card-body">
             <div>
-              <h3 class="py-3 text-left text-md-center">Help Packing?</h3>
+              <h3 class="py-3 text-left text-md-center">Truck & Mover</h3>
               <p class="text-left">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Numquam debitis consectetur vel labore atque consequuntur.
               </p>
             </div>
-            <!-- <a
-              href=""
-              class="btn btn-white btn-grad position-absolute px-5 text-uppercase"
-              >Quote</a
-            > -->
+            <a
+              href="javascript:void(0)"
+              class="btn btn-grad btn-card position-absolute font-weight-bold"
+              @click="show()"
+              >Get a Quote</a
+            >
           </div>
         </div>
       </div>
@@ -158,10 +160,13 @@
     </div>
     <div class="py-5">
       <div class="container text-left">
-        <h2 class="title">Our Vehicles</h2>
+        <h2 class="title">Our Trucks</h2>
         <h4 class="sub-title font-italic">
           Easy to Drive, Tailgate Lift, Car Licence OK
         </h4>
+        <a href="javascript:void(0)" @click="show()" class="btn btn-grad"
+          >Get a Quote</a
+        >
         <div class="row">
           <div class="py-3 col-12 col-md-6">
             <p>
@@ -254,9 +259,6 @@ export default {
   );
   background-size: 300%;
   background-position: 50%;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
   border: none !important;
   transition: background-position 0.15s ease-in-out;
   &:hover {
@@ -264,6 +266,12 @@ export default {
     color: white;
     border: none !important;
   }
+}
+
+.btn-card {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
 
 .card-wrapper {

@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Nav id="nav"></Nav>
+
     <modal
       name="modal"
       height="auto"
@@ -68,12 +69,10 @@ body {
 }
 
 #nav {
-  position: absolute;
-  width: 100%;
   height: 100px;
 }
 
 .content {
-  padding-top: 100px;
+  // padding-top: 100px;
 }
 </style>
