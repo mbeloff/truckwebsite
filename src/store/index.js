@@ -12,7 +12,7 @@ export default new Vuex.Store({
       email: "",      
       dateRange: { start: new Date(), end: new Date() },
       dateRangeShort: "", 
-      age: null,     
+      isOver21: null,     
       DlNumber: "",
       DlExpiry: new Date(),
       DlExpiryShort: "",

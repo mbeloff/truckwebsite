@@ -112,7 +112,7 @@
             <input
               class="mr-2 ml-2 my-auto"
               type="checkbox"
-              name="age"
+              name="isOver21"
               id="isOver21"
               required
               value="isOver21"
