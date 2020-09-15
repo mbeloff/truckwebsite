@@ -197,7 +197,7 @@
             value="Trolley"
             v-model="form.requestedFeatures"
           />
-          <label for="racking">Trolley ($25/ea)</label>
+          <label for="trolley">Trolley ($25/ea)</label>
         </div>
         <div class="col-12 col-md-6">
           <input
@@ -207,7 +207,7 @@
             value="Blankets"
             v-model="form.requestedFeatures"
           />
-          <label for="hoist">Blankets ($5/ea)</label>
+          <label for="blankets">Blankets ($5/ea)</label>
         </div>
       </div>
 
@@ -224,6 +224,34 @@
             v-model="form.comment"
           ></textarea
           ><i class="form-icon fal fa-comment-alt-lines"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p class="secondary">
+            Do you need someone to drive, or assist with moving? We may be able
+            to help.
+          </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <input
+            class="mr-2 ml-2"
+            type="checkbox"
+            id="driver"
+            value="Driver Requested"
+            v-model="form.removalistRequest"
+          />
+          <label for="driver">Yes, I need a Driver</label>
+        </div>
+        <div class="col-12 col-md-6">
+          <input
+            class="mr-2 ml-2"
+            type="checkbox"
+            id="mover"
+            value="Removalist Requested"
+            v-model="form.removalistRequest"
+          />
+          <label for="mover">Yes, I need help loading</label>
         </div>
       </div>
       <div class="text-right mt-4">
@@ -304,6 +332,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.secondary {
+  color: var(--secondary);
+}
+
 .check-grid {
   display: grid;
   grid-template-columns: 2rem 1fr;

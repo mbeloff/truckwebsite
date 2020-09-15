@@ -9,16 +9,17 @@ export default new Vuex.Store({
       location: "",
       name: "",
       number: "",
-      email: "",      
+      email: "",
       dateRange: { start: new Date(), end: new Date() },
-      dateRangeShort: "", 
-      ageCheck: true,     
+      dateRangeShort: "",
+      ageCheck: true,
       DlNumber: "",
       DlExpiry: new Date(),
       DlExpiryShort: "",
       DlState: "",
       requestedFeatures: [],
-      comment: "",
+      removalistRequest: [],
+      comment: ""
     }
   },
   mutations: {

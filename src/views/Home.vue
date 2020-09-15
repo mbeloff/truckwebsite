@@ -275,7 +275,7 @@ export default {
   grid-gap: 10rem;
   @media only screen and (min-width: 768px) {
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.75fr 1fr 0.75fr;
     grid-gap: 1rem;
   }
 }
