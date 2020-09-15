@@ -6,7 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     form: {
-      location: "",
+      // location: "",
       name: "",
       number: "",
       email: "",

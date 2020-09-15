@@ -66,7 +66,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 form-group">
+        <!-- <div class="col-md-6 form-group">
           <label class="sr-only">Pickup Location</label>
 
           <select
@@ -83,7 +83,7 @@
             <option value="Brisbane">Brisbane</option>
             <option value="Sydney">Sydney</option></select
           ><i class="form-icon fal fa-map-marker-alt"></i>
-        </div>
+        </div> -->
         <div class="col-md-6 form-group position-relative">
           <div class="form-control my-0 py-0">
             <v-date-picker

@@ -119,7 +119,7 @@
     </div>
     <div class="container map-section py-5">
       <h2 class="title text-left">
-        Our Locations
+        Our Location
       </h2>
       <div class="map-wrapper mt-5">
         <div class="">
@@ -139,7 +139,7 @@
             class="border"
           ></iframe>
         </div>
-        <div class="">
+        <!-- <div class="">
           <h2 class="font-weight-bold text-left">Sydney</h2>
           <h6 class="text-left mb-3">
             15 Margate St, Botany
@@ -155,7 +155,7 @@
             tabindex="0"
             class="border"
           ></iframe>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="py-5">
