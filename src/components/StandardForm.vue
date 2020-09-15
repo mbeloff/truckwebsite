@@ -1,9 +1,9 @@
 <template>
   <div class="form col-12 pt-1 pb-3">
     <form
-      name="getquoteForm"
+      name="TruckRentalQuoteForm"
       method="post"
-      id="getquoteForm"
+      id="TruckRentalQuoteForm"
       action="/success"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
@@ -17,7 +17,7 @@
         >
       </p>
       <br />
-      <input type="hidden" name="form-name" value="getquoteForm" />
+      <input type="hidden" name="form-name" value="TruckRentalQuoteForm" />
 
       <div class="row">
         <div class="col-md-12 form-group">
@@ -279,7 +279,7 @@ export default {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: this.encode({
-          "form-name": "getquoteForm",
+          "form-name": "TruckRentalQuoteForm",
           ...this.form
         })
       })
