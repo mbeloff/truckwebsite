@@ -6,6 +6,7 @@
       @click="show()"
       >Get a Quote</a
     >
+    <h1 class="footer-number font-weight-bold mt-2">1800 24 68 69</h1>
   </div>
 </template>
 
@@ -27,8 +28,7 @@ export default {
   background: rgb(38, 39, 44);
 }
 
-.brand {
-  color: rgb(148, 134, 137);
-  font-variation-settings: "wght" 350;
+.footer-number {
+  font-family: Helvetica;
 }
 </style>

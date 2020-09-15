@@ -2,8 +2,10 @@
   <div>
     <div class="home d-flex flex-column flex-center py-5">
       <div class="container my-auto">
-        <h1 class="big-title font-weight-bold text-left d-inline-block">
-          Best <span class="font-italic">Truckin'</span> Deals in Brisbane
+        <h1
+          class="big-title font-weight-bold text-left d-inline-block font-italic"
+        >
+          Best Truckin' Deals in Brisbane
         </h1>
       </div>
     </div>
@@ -30,89 +32,91 @@
       </div>
     </div>
     <div class="container-fluid card-bg mt-5">
-      <div class="card-wrapper py-5">
-        <div class="card position-relative">
-          <div
-            class="img-wrapper m-auto position-relative"
-            style="width: 100%; height: 100px; max-width: 200px;"
-          >
-            <img
-              class="rounded-circle bg-white circle-shadow m-auto position-absolute"
-              src="../assets/drawkit/DRIVER.svg"
-              alt=""
-              style="left: 0; bottom: 0; height: 200px; width: 200px;"
-            />
-          </div>
-          <div class="card-body">
-            <div>
-              <h3 class="py-3 text-left text-md-center">Truck & Driver</h3>
-              <p class="text-left">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Numquam debitis consectetur vel labore atque consequuntur.
-              </p>
-            </div>
-            <a
-              href="javascript:void(0)"
-              class="btn btn-grad btn-card position-absolute font-weight-bold"
-              @click="show()"
-              >Get a Quote</a
+      <div class="container">
+        <div class="card-wrapper py-5">
+          <div class="card position-relative">
+            <div
+              class="img-wrapper m-auto position-relative"
+              style="width: 100%; height: 100px; max-width: 200px;"
             >
-          </div>
-        </div>
-        <div class="card card-special position-relative">
-          <div
-            class="img-wrapper m-auto position-relative"
-            style="width: 100%; height: 100px; max-width: 200px;"
-          >
-            <img
-              class="rounded-circle bg-white circle-shadow m-auto position-absolute"
-              src="../assets/drawkit/VAN.svg"
-              alt=""
-              style="left: 0; bottom: 0; height: 200px; width: 200px;"
-            />
-          </div>
-          <div class="card-body">
-            <div>
-              <h3 class="py-3 text-left text-md-center">Truck Rental</h3>
-              <p class="text-left">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Numquam debitis consectetur vel labore atque consequuntur.
-              </p>
+              <img
+                class="rounded-circle bg-white circle-shadow m-auto position-absolute"
+                src="../assets/drawkit/DRIVER.svg"
+                alt=""
+                style="left: 0; bottom: 0; height: 200px; width: 200px;"
+              />
             </div>
-            <a
-              href="javascript:void(0)"
-              class="btn btn-grad btn-card position-absolute font-weight-bold"
-              @click="show()"
-              >Get a Quote</a
-            >
-          </div>
-        </div>
-        <div class="card position-relative">
-          <div
-            class="img-wrapper m-auto position-relative"
-            style="width: 100%; height: 100px; max-width: 200px;"
-          >
-            <img
-              class="rounded-circle bg-white circle-shadow m-auto position-absolute"
-              src="../assets/drawkit/MOVERS.svg"
-              alt=""
-              style="left: 0; bottom: 0; height: 200px; width: 200px;"
-            />
-          </div>
-          <div class="card-body">
-            <div>
-              <h3 class="py-3 text-left text-md-center">Truck & Mover</h3>
-              <p class="text-left">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Numquam debitis consectetur vel labore atque consequuntur.
-              </p>
+            <div class="card-body">
+              <div>
+                <h3 class="py-3 text-left text-md-center">Truck & Driver</h3>
+                <p class="text-left">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Numquam debitis consectetur vel labore atque consequuntur.
+                </p>
+              </div>
+              <a
+                href="javascript:void(0)"
+                class="btn btn-grad btn-card position-absolute font-weight-bold"
+                @click="show()"
+                >Get a Quote</a
+              >
             </div>
-            <a
-              href="javascript:void(0)"
-              class="btn btn-grad btn-card position-absolute font-weight-bold"
-              @click="show()"
-              >Get a Quote</a
+          </div>
+          <div class="card card-special position-relative">
+            <div
+              class="img-wrapper m-auto position-relative"
+              style="width: 100%; height: 100px; max-width: 200px;"
             >
+              <img
+                class="rounded-circle bg-white circle-shadow m-auto position-absolute"
+                src="../assets/drawkit/VAN.svg"
+                alt=""
+                style="left: 0; bottom: 0; height: 200px; width: 200px;"
+              />
+            </div>
+            <div class="card-body">
+              <div>
+                <h3 class="py-3 text-left text-md-center">Truck Rental</h3>
+                <p class="text-left">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Numquam debitis consectetur vel labore atque consequuntur.
+                </p>
+              </div>
+              <a
+                href="javascript:void(0)"
+                class="btn btn-grad btn-card position-absolute font-weight-bold"
+                @click="show()"
+                >Get a Quote</a
+              >
+            </div>
+          </div>
+          <div class="card position-relative">
+            <div
+              class="img-wrapper m-auto position-relative"
+              style="width: 100%; height: 100px; max-width: 200px;"
+            >
+              <img
+                class="rounded-circle bg-white circle-shadow m-auto position-absolute"
+                src="../assets/drawkit/MOVERS.svg"
+                alt=""
+                style="left: 0; bottom: 0; height: 200px; width: 200px;"
+              />
+            </div>
+            <div class="card-body">
+              <div>
+                <h3 class="py-3 text-left text-md-center">Truck & Mover</h3>
+                <p class="text-left">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Numquam debitis consectetur vel labore atque consequuntur.
+                </p>
+              </div>
+              <a
+                href="javascript:void(0)"
+                class="btn btn-grad btn-card position-absolute font-weight-bold"
+                @click="show()"
+                >Get a Quote</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -168,8 +172,8 @@
             >Get a Quote</a
           >
         </h2>
-        <h4 class="sub-title font-italic">
-          Easy to Drive, Tailgate Lift, Car Licence OK
+        <h4 class="sub-title">
+          Auto, 500kg Tailgate Lift, Open Car Licence OK
         </h4>
 
         <div class="row">
@@ -217,12 +221,7 @@ export default {
 .home {
   min-height: 300px;
   max-height: 100vh;
-  background-image: linear-gradient(
-      to right,
-      #ffab2c62,
-      rgba(255, 72, 0, 0.404)
-    ),
-    url("../assets/drawkit/DRIVER.svg");
+  background-image: linear-gradient(30deg, #fcb141, rgb(255, 45, 17));
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -231,6 +230,7 @@ export default {
 .big-title {
   color: rgb(255, 255, 255);
   font-size: calc(40px + (100 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-variation-settings: "wght" 700;
 }
 
 .title {
@@ -281,32 +281,35 @@ export default {
 
 .card-wrapper {
   margin: auto;
-  max-width: 1000px;
+  // max-width: 1000px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
   grid-gap: 10rem;
   @media only screen and (min-width: 768px) {
     grid-template-rows: 1fr;
-    grid-template-columns: 0.75fr 1fr 0.75fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
   }
 }
 
 .card {
-  background-color: rgb(253, 251, 234) !important;
-}
-
-.card-special {
-  position: absolute;
-  border: 1px solid var(--primary) !important;
-  font-size: 1.1rem;
-  height: 115%;
-  top: -7.5%;
-  @media only screen and (max-width: 676px) {
-    grid-row: 1/2;
+  background-color: rgb(253, 245, 234) !important;
+  h3 {
+    font-weight: 600;
   }
 }
+
+// .card-special {
+//   position: absolute;
+//   border: 1px solid var(--primary) !important;
+//   font-size: 1.1rem;
+//   height: 115%;
+//   top: -7.5%;
+//   @media only screen and (max-width: 676px) {
+//     grid-row: 1/2;
+//   }
+// }
 
 .card-bg {
   background: #354458;

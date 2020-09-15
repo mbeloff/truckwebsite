@@ -3,7 +3,13 @@
     <vue-navigation-bar
       :options="navbarOptions"
       @vnb-item-clicked="vnbItemClicked"
-    />
+      ><!-- Custom Slot - Uncomment to use -->
+      <template v-slot:custom-section>
+        <div class="custom-section-content">
+          <h1 class="mb-0 font-weight-bold">1800 24 68 69</h1>
+        </div>
+      </template>
+    </vue-navigation-bar>
   </div>
 </template>
 
@@ -116,13 +122,10 @@ export default {
 @import "/path/to/node_modules/vue-navigation-bar.css";
 .vnb {
   text-align: left;
-  .btn-book {
-    background: #00c4a3;
-    color: white;
-    &:hover {
-      background: darken(#00c4a3, 10%);
-      color: white;
-    }
+  .custom-section-content {
+    text-align: right;
+    margin-left: auto;
+    font-family: Helvetica;
   }
   .btn-grad {
     color: white !important;
@@ -152,6 +155,9 @@ export default {
       .fal {
         color: rgb(255, 117, 37);
       }
+    }
+    &--right {
+      margin-left: 1rem;
     }
   }
 
