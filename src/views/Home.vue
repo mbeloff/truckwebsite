@@ -3,7 +3,7 @@
     <div class="home d-flex flex-column flex-center py-5">
       <div class="container my-auto">
         <h1 class="big-title font-weight-bold text-left d-inline-block">
-          Best Truck Deals in Brisbane
+          Best <span class="font-italic">Truckin'</span> Deals in Brisbane
         </h1>
       </div>
     </div>
@@ -160,13 +160,18 @@
     </div>
     <div class="py-5">
       <div class="container text-left">
-        <h2 class="title">Our Trucks</h2>
+        <h2 class="title">
+          Our Trucks<a
+            href="javascript:void(0)"
+            @click="show()"
+            class="btn btn-grad ml-3 mb-2"
+            >Get a Quote</a
+          >
+        </h2>
         <h4 class="sub-title font-italic">
           Easy to Drive, Tailgate Lift, Car Licence OK
         </h4>
-        <a href="javascript:void(0)" @click="show()" class="btn btn-grad"
-          >Get a Quote</a
-        >
+
         <div class="row">
           <div class="py-3 col-12 col-md-6">
             <p>
@@ -225,7 +230,7 @@ export default {
 
 .big-title {
   color: rgb(255, 255, 255);
-  font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(40px + (100 - 40) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .title {

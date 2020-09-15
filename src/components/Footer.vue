@@ -2,7 +2,7 @@
   <div class="mt-5 py-4 text-center text-white" id="footer">
     <a
       href="javascript:void(0)"
-      class="btn btn-grad font-weight-bold"
+      class="btn btn-grad font-weight-bold btn-lg"
       @click="show()"
       >Get a Quote</a
     >
