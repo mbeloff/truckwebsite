@@ -102,7 +102,7 @@ export default {
             type: "button",
             text: "Get a Quote",
             path: "",
-            class: "btn btn-grad",
+            class: "btn btn-grad font-weight-bold",
             iconRight: '<i class="fal fa-comment-alt-lines fa-fw"></i>'
           }
         ]
