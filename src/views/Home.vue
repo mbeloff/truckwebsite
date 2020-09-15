@@ -12,7 +12,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6 intro-text">
-          <h2 class="mb-3 title">
+          <h2 class="title">
             Moving? Need a Truck?
           </h2>
           <h5 class="sub-title">
@@ -235,8 +235,8 @@ export default {
 
 .title {
   color: var(--dark-color);
-  // font-weight: 600;
-  font-variation-settings: "wght" 800;
+  font-weight: 600;
+  font-variation-settings: "wght" 700;
   font-size: 2.5rem;
   font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
@@ -244,6 +244,7 @@ export default {
 .sub-title {
   color: var(--primary);
   font-weight: 600;
+  font-variation-settings: "wght" 550;
   font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
