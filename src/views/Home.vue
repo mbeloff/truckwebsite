@@ -5,7 +5,7 @@
         <h1
           class="big-title font-weight-bold text-left d-inline-block font-italic"
         >
-          Best Truckin' Deals in Brisbane
+          Best <span>Truckin'</span> Deals in Brisbane
         </h1>
       </div>
     </div>
@@ -221,16 +221,15 @@ export default {
 .home {
   min-height: 300px;
   max-height: 100vh;
-  background-image: linear-gradient(30deg, #fcb141, rgb(255, 45, 17));
-
+  // background-image: linear-gradient(30deg, #fcb141, rgb(255, 45, 17));
+  background: var(--bg-dark);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50%;
 }
 
 .big-title {
-  color: rgb(255, 255, 255);
-  color: white;
+  color: rgb(240, 235, 231);
   font-size: calc(40px + (100 - 40) * ((100vw - 300px) / (1600 - 300)));
   font-variation-settings: "wght" 700;
 }
@@ -315,7 +314,7 @@ export default {
 // }
 
 .card-bg {
-  background: #354458;
+  background: var(--bg-dark);
 }
 
 .circle-shadow {

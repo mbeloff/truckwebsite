@@ -48,6 +48,7 @@ body {
   --secondary: #00c4a3;
   --dark-color: #6d2c31;
   --light-color: #ff9939;
+  --bg-dark: #1e2a3b;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@531&display=swap");

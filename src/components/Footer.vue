@@ -25,7 +25,7 @@ export default {
 
 <style scoped lang="scss">
 #footer {
-  background: rgb(38, 39, 44);
+  background: var(--bg-dark);
 }
 
 .footer-number {
