@@ -97,13 +97,18 @@
               readonly="true"
               color="teal"
               :masks="{ L: 'MMM DD' }"
+              :input-props="{
+                class: 'form-control border-0 bg-white px-0',
+                placeholder: 'Pickup/Dropoff Dates',
+                readonly: true
+              }"
             >
             </v-date-picker>
             <i class="form-icon fal fa-calendar-alt"></i>
           </div>
-          <label for="" class="underlabel position-absolute"
+          <!-- <label for="" class="underlabel position-absolute"
             >Pickup/Dropoff Dates</label
-          >
+          > -->
         </div>
       </div>
       <div class="row">
@@ -155,13 +160,18 @@
               readonly="true"
               color="teal"
               :masks="{ L: 'DD/MM/YY' }"
+              :input-props="{
+                class: 'form-control border-0 bg-white px-0',
+                placeholder: 'Licence Expiry',
+                readonly: true
+              }"
             >
             </v-date-picker>
             <i class="form-icon fal fa-calendar"></i>
           </div>
-          <label class="position-absolute underlabel" for="DLexp"
+          <!-- <label class="position-absolute underlabel" for="DLexp"
             >Drivers Licence Expiry Date</label
-          >
+          > -->
         </div>
         <div class="col-md-4 form-group">
           <select
@@ -363,6 +373,10 @@ export default {
 .form-control {
   background: rgb(255, 255, 255);
   padding-left: 2.4rem;
+  span {
+    width: 100%;
+    padding-right: 4.5rem;
+  }
 }
 
 .form-control::placeholder {
