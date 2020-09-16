@@ -222,6 +222,7 @@ export default {
   min-height: 300px;
   max-height: 100vh;
   background-image: linear-gradient(30deg, #fcb141, rgb(255, 45, 17));
+
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -229,6 +230,7 @@ export default {
 
 .big-title {
   color: rgb(255, 255, 255);
+  color: white;
   font-size: calc(40px + (100 - 40) * ((100vw - 300px) / (1600 - 300)));
   font-variation-settings: "wght" 700;
 }
