@@ -20,25 +20,25 @@
 </template>
 
 <script>
-import "vue-navigation-bar/dist/vue-navigation-bar.css";
-import Nav from "@/components/Nav.vue";
-import Footer from "@/components/Footer.vue";
-import StandardForm from "@/components/StandardForm.vue";
+import 'vue-navigation-bar/dist/vue-navigation-bar.css'
+import Nav from '@/components/Nav.vue'
+import Footer from '@/components/Footer.vue'
+import StandardForm from '@/components/StandardForm.vue'
 
 export default {
   components: { Nav, Footer, StandardForm },
   methods: {
     show() {
-      this.$modal.show("modal");
+      this.$modal.show('modal')
     },
     hide() {
-      this.$modal.hide("modal");
+      this.$modal.hide('modal')
     }
   },
   mount() {
-    this.show();
+    this.show()
   }
-};
+}
 </script>
 
 <style lang="scss">
@@ -52,7 +52,7 @@ body {
   scroll-behavior: smooth;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@531&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@531&display=swap');
 
 .vm--modal {
   height: auto !important;
@@ -60,8 +60,8 @@ body {
 
 #app {
   min-height: 100vh;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-variation-settings: "wght" 400;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-variation-settings: 'wght' 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
@@ -76,5 +76,44 @@ body {
 
 .content {
   // padding-top: 100px;
+}
+
+.big-title {
+  color: rgb(240, 235, 231);
+  font-size: calc(40px + (100 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-variation-settings: 'wght' 700;
+}
+
+.title {
+  color: var(--dark-color);
+  font-weight: 600;
+  font-variation-settings: 'wght' 700;
+  font-size: 2.5rem;
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.sub-title {
+  color: var(--primary);
+  font-weight: 600;
+  font-variation-settings: 'wght' 550;
+  font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.btn-grad {
+  color: white !important;
+  background-image: linear-gradient(
+    15deg,
+    var(--primary) 40%,
+    var(--light-color)
+  );
+  background-size: 300%;
+  background-position: 50%;
+  border: none !important;
+  transition: background-position 0.15s ease-in-out;
+  &:hover {
+    background-position: 100%;
+    color: white;
+    border: none !important;
+  }
 }
 </style>

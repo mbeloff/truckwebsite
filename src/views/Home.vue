@@ -227,50 +227,11 @@ export default {
   background-position: 50%;
 }
 
-.big-title {
-  color: rgb(240, 235, 231);
-  font-size: calc(40px + (100 - 40) * ((100vw - 300px) / (1600 - 300)));
-  font-variation-settings: "wght" 700;
-}
-
-.title {
-  color: var(--dark-color);
-  font-weight: 600;
-  font-variation-settings: "wght" 700;
-  font-size: 2.5rem;
-  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
-}
-
-.sub-title {
-  color: var(--primary);
-  font-weight: 600;
-  font-variation-settings: "wght" 550;
-  font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
-}
-
 .intro-text {
   text-align: left;
   margin: 5rem auto;
   @media only screen and (min-width: 768px) {
     margin: 10rem auto;
-  }
-}
-
-.btn-grad {
-  color: white !important;
-  background-image: linear-gradient(
-    15deg,
-    var(--primary) 40%,
-    var(--light-color)
-  );
-  background-size: 300%;
-  background-position: 50%;
-  border: none !important;
-  transition: background-position 0.15s ease-in-out;
-  &:hover {
-    background-position: 100%;
-    color: white;
-    border: none !important;
   }
 }
 
@@ -300,17 +261,6 @@ export default {
     font-weight: 600;
   }
 }
-
-// .card-special {
-//   position: absolute;
-//   border: 1px solid var(--primary) !important;
-//   font-size: 1.1rem;
-//   height: 115%;
-//   top: -7.5%;
-//   @media only screen and (max-width: 676px) {
-//     grid-row: 1/2;
-//   }
-// }
 
 .card-bg {
   background: var(--bg-dark);
