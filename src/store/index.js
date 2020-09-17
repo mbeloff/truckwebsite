@@ -25,6 +25,9 @@ export default new Vuex.Store({
   mutations: {
     storeForm(state, n) {
       state.form = n
+    },
+    storeRemovalist(state, n) {
+      state.form.removalistRequest = n
     }
   },
   actions: {},

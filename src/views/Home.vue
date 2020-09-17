@@ -57,7 +57,7 @@
               <a
                 href="javascript:void(0)"
                 class="btn btn-grad btn-card position-absolute font-weight-bold"
-                @click="show()"
+                @click="showDriver()"
                 >Get a Quote</a
               >
             </div>
@@ -113,7 +113,7 @@
               <a
                 href="javascript:void(0)"
                 class="btn btn-grad btn-card position-absolute font-weight-bold"
-                @click="show()"
+                @click="showMover()"
                 >Get a Quote</a
               >
             </div>
@@ -208,9 +208,19 @@ export default {
   name: 'Home',
   methods: {
     show() {
+      this.$store.commit('storeRemovalist', [])
+      this.$modal.show('modal')
+    },
+    showDriver() {
+      this.$store.commit('storeRemovalist', ['Driver Requested'])
+      this.$modal.show('modal')
+    },
+    showMover() {
+      this.$store.commit('storeRemovalist', ['Movers Requested'])
       this.$modal.show('modal')
     },
     hide() {
+      this.$store.commit('storeRemovalist', [])
       this.$modal.hide('modal')
     }
   }

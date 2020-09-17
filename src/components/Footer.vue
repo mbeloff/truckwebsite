@@ -14,6 +14,7 @@
 export default {
   methods: {
     show() {
+      this.$store.commit('storeRemovalist', [])
       this.$modal.show('modal')
     },
     hide() {

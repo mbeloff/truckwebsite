@@ -29,6 +29,7 @@ export default {
   components: { Nav, Footer, StandardForm },
   methods: {
     show() {
+      this.$store.commit('storeRemovalist', [])
       this.$modal.show('modal')
     },
     hide() {
