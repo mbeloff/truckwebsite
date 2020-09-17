@@ -8,7 +8,6 @@
             method="post"
             id="TruckEnquiry"
             action="/success"
-            data-netlify="true"
             data-netlify-honeypot="bot-field"
             @submit.prevent="handleSubmit"
           >
@@ -88,7 +87,6 @@
               </div>
             </div>
             <div class="text-right mt-4">
-              <div data-netlify-recaptcha="true" class="float-left"></div>
               <button
                 type="submit"
                 class="btn btn-submit text-uppercase"

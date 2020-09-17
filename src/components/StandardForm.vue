@@ -7,7 +7,6 @@
       action="/success"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      data-netlify-recaptcha="true"
       @submit.prevent="handleSubmit"
     >
       <p class="sub-title">
@@ -144,7 +143,7 @@
             aria-label="Your phone number"
             name="DriversLicenceNumber"
             required
-            v-model="form.DricersLicenceNumber"
+            v-model="form.DriversLicenceNumber"
             autocomplete="off"
           /><i class="form-icon fal fa-hashtag"></i>
         </div>
@@ -268,7 +267,6 @@
         </div>
       </div>
       <div class="text-right mt-4">
-        <div data-netlify-recaptcha="true" class="float-left"></div>
         <button
           type="submit"
           class="btn btn-submit text-uppercase"
