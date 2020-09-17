@@ -6,17 +6,17 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     form: {
-      // location: "",
+      location: '',
       name: '',
       number: '',
       email: '',
       dateRange: { start: null, end: null },
       dateRangeShort: '',
-      ageCheck: true,
-      DlNumber: '',
-      DlExpiry: null,
-      DlExpiryShort: '',
-      DlState: '',
+      ageCheck: null,
+      DriversLicenceNumber: '',
+      LicenceExpiry: null,
+      LicenceExpiryShort: '',
+      DriversLicenceState: '',
       requestedFeatures: [],
       removalistRequest: [],
       comment: ''

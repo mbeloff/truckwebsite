@@ -78,8 +78,6 @@ body {
   // padding-top: 100px;
 }
 
-
-
 .title {
   color: var(--dark-color);
   font-weight: 600;

@@ -1,12 +1,13 @@
 <template>
   <div class="form col-12 pt-1 pb-3">
     <form
-      name="TruckRentalQuoteForm"
+      name="TruckQuote"
       method="post"
-      id="TruckRentalQuoteForm"
+      id="TruckQuote"
       action="/success"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      data-netlify-recaptcha="true"
       @submit.prevent="handleSubmit"
     >
       <p class="sub-title">
@@ -16,8 +17,12 @@
           quote.</span
         >
       </p>
-      <br />
-      <input type="hidden" name="form-name" value="TruckRentalQuoteForm" />
+      <input
+        type="text"
+        class="invisible py-0"
+        name="bot-field"
+        style="height: 0"
+      />
 
       <div class="row">
         <div class="col-md-12 form-group">
@@ -66,7 +71,7 @@
         </div>
       </div>
       <div class="row">
-        <!-- <div class="col-md-6 form-group">
+        <div class="col-md-6 form-group">
           <label class="sr-only">Pickup Location</label>
 
           <select
@@ -80,10 +85,9 @@
             <option value="" disabled="disabled" selected="selected"
               >Pickup Location</option
             >
-            <option value="Brisbane">Brisbane</option>
-            <option value="Sydney">Sydney</option></select
+            <option value="Brisbane">Brisbane</option> </select
           ><i class="form-icon fal fa-map-marker-alt"></i>
-        </div> -->
+        </div>
         <div class="col-md-6 form-group position-relative">
           <div class="form-control my-0 py-0">
             <v-date-picker
@@ -138,9 +142,9 @@
             type="text"
             placeholder="Licence #"
             aria-label="Your phone number"
-            name="DlNumber"
+            name="DriversLicenceNumber"
             required
-            v-model="form.DlNumber"
+            v-model="form.DricersLicenceNumber"
             autocomplete="off"
           /><i class="form-icon fal fa-hashtag"></i>
         </div>
@@ -148,13 +152,13 @@
         <div class="col-md-4 form-group position-relative">
           <div class="form-control my-0 py-0">
             <v-date-picker
-              id="DlExpiry"
+              id="LicenceExpiry"
               class="date-picker"
-              name="DlExpiry"
+              name="LicenceExpiry"
               :popover="{ placement: 'bottom' }"
               :min-date="new Date()"
               :max-date="new Date(new Date().getFullYear() + 10, 1, 1)"
-              v-model="form.DlExpiry"
+              v-model="form.LicenceExpiry"
               @input="formatExp"
               required
               readonly="true"
@@ -176,11 +180,11 @@
         <div class="col-md-4 form-group">
           <select
             class="form-control"
-            name="DlState"
+            name="DriversLicenceState"
             required
             aria-invalid="false"
             aria-label="Drivers Licence State"
-            v-model="form.DlState"
+            v-model="form.DriversLicenceState"
           >
             <option value="" disabled="disabled" selected="selected"
               >Licence State</option
@@ -264,6 +268,7 @@
         </div>
       </div>
       <div class="text-right mt-4">
+        <div data-netlify-recaptcha="true" class="float-left"></div>
         <button
           type="submit"
           class="btn btn-submit text-uppercase"
@@ -293,12 +298,12 @@ export default {
         this.form.dateRange.end.toString().substring(0, 10)
     },
     formatExp() {
-      this.form.DlExpiryShort =
-        this.form.DlExpiry.getDate() +
+      this.form.LicenceExpiryShort =
+        this.form.LicenceExpiry.getDate() +
         '/' +
-        this.form.DlExpiry.getMonth() +
+        this.form.LicenceExpiry.getMonth() +
         '/' +
-        this.form.DlExpiry.getFullYear()
+        this.form.LicenceExpiry.getFullYear()
     },
     hide() {
       this.$store.commit('storeForm', this.form)
@@ -316,7 +321,7 @@ export default {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
-          'form-name': 'TruckRentalQuoteForm',
+          'form-name': 'TruckQuote',
           ...this.form
         })
       })

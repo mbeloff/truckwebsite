@@ -4,9 +4,9 @@
       <div class="row">
         <div class="col-12 col-md-6 form">
           <form
-            name="GeneralEnquiry"
+            name="TruckEnquiry"
             method="post"
-            id="GeneralEnquiry"
+            id="TruckEnquiry"
             action="/success"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
@@ -20,8 +20,12 @@
               If you'd like to get a quote instead -
               <a href="javascript:void(0)" @click="show()">click here</a>
             </p>
-            <br />
-            <input type="hidden" name="form-name" value="GeneralEnquiry" />
+            <input
+              type="text"
+              class="invisible py-0"
+              name="bot-field"
+              style="height: 0"
+            />
             <div class="row">
               <div class="col-md-12 form-group">
                 <label class="sr-only">Name</label>
@@ -83,6 +87,7 @@
               </div>
             </div>
             <div class="text-right mt-4">
+              <div data-netlify-recaptcha="true" class="float-left"></div>
               <button
                 type="submit"
                 class="btn btn-submit text-uppercase"
@@ -151,7 +156,7 @@ export default {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
-          'form-name': 'GeneralEnquiry',
+          'form-name': 'TruckEnquiry',
           ...this.enquire
         })
       })
