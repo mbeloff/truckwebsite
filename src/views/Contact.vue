@@ -81,6 +81,7 @@
                   placeholder="Hi. I would like to know..."
                   aria-label="Type your enquiry here"
                   name="question"
+                  required
                   v-model="enquire.question"
                 ></textarea
                 ><i class="form-icon fal fa-comment-alt-lines"></i>
