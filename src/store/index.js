@@ -1,32 +1,32 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
     form: {
       // location: "",
-      name: "",
-      number: "",
-      email: "",
+      name: '',
+      number: '',
+      email: '',
       dateRange: { start: null, end: null },
-      dateRangeShort: "",
+      dateRangeShort: '',
       ageCheck: true,
-      DlNumber: "",
+      DlNumber: '',
       DlExpiry: null,
-      DlExpiryShort: "",
-      DlState: "",
+      DlExpiryShort: '',
+      DlState: '',
       requestedFeatures: [],
       removalistRequest: [],
-      comment: ""
+      comment: ''
     }
   },
   mutations: {
     storeForm(state, n) {
-      state.form = n;
+      state.form = n
     }
   },
   actions: {},
   modules: {}
-});
+})

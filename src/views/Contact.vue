@@ -33,6 +33,7 @@
                 name="name"
                 required
                 ref="name"
+                v-model="enquire.name"
               />
               <i class="form-icon fal fa-user"></i>
             </div>
@@ -47,6 +48,7 @@
                 placeholder="Phone"
                 aria-label="Your phone number"
                 name="number"
+                v-model="enquire.number"
                 required
               /><i class="form-icon fal fa-phone-rotary"></i>
             </div>
@@ -60,6 +62,7 @@
                 placeholder="Email"
                 aria-label="Your email address"
                 name="email"
+                v-model="enquire.email"
               /><i class="form-icon fal fa-envelope"></i>
             </div>
           </div>
@@ -72,7 +75,8 @@
                 rows="4"
                 placeholder="Hi. I would like to know..."
                 aria-label="Type your enquiry here"
-                name="comment"
+                name="question"
+                v-model="enquire.question"
               ></textarea
               ><i class="form-icon fal fa-comment-alt-lines"></i>
             </div>
@@ -97,17 +101,54 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      enquire: {
+        name: '',
+        number: '',
+        email: '',
+        question: ''
+      }
+    }
   },
   methods: {
     show() {
-      this.$modal.show("modal");
+      this.$modal.show('modal')
     },
     hide() {
-      this.$modal.hide("modal");
+      this.$modal.hide('modal')
+    },
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join('&')
+    },
+    handleSubmit() {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({
+          'form-name': 'GeneralEnquiry',
+          ...this.enquire
+        })
+      })
+        .then(() => {
+          this.$router.push('success')
+          // console.log('success')
+        })
+        .catch(() => {
+          this.$router.push('404')
+          // console.log('failure')
+        })
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.$refs.name.focus()
+    }, 500)
   }
-};
+}
 </script>
 
 <style></style>
