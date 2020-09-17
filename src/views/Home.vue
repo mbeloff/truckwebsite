@@ -39,12 +39,10 @@
               class="img-wrapper m-auto position-relative"
               style="width: 100%; height: 100px; max-width: 200px;"
             >
-              <img
-                class="rounded-circle bg-white circle-shadow m-auto position-absolute"
-                src="../assets/drawkit/DRIVER.svg"
-                alt=""
+              <div
+                class="rounded-circle circle-shadow m-auto position-absolute driver-img"
                 style="left: 0; bottom: 0; height: 200px; width: 200px;"
-              />
+              ></div>
             </div>
             <div class="card-body">
               <div>
@@ -67,12 +65,12 @@
               class="img-wrapper m-auto position-relative"
               style="width: 100%; height: 100px; max-width: 200px;"
             >
-              <img
-                class="rounded-circle bg-white circle-shadow m-auto position-absolute"
+              <div
+                class="rounded-circle bg-white circle-shadow m-auto position-absolute diy-img"
                 src="../assets/drawkit/VAN.svg"
                 alt=""
                 style="left: 0; bottom: 0; height: 200px; width: 200px;"
-              />
+              ></div>
             </div>
             <div class="card-body">
               <div>
@@ -95,12 +93,10 @@
               class="img-wrapper m-auto position-relative"
               style="width: 100%; height: 100px; max-width: 200px;"
             >
-              <img
-                class="rounded-circle bg-white circle-shadow m-auto position-absolute"
-                src="../assets/drawkit/MOVERS.svg"
-                alt=""
+              <div
+                class="rounded-circle bg-white circle-shadow m-auto position-absolute move-img"
                 style="left: 0; bottom: 0; height: 200px; width: 200px;"
-              />
+              ></div>
             </div>
             <div class="card-body">
               <div>
@@ -298,5 +294,18 @@ export default {
     // grid-template-columns: 1fr 1fr;
     // grid-gap: 10rem;
   }
+}
+
+.diy-img {
+  background-image: url('../assets/diy.jpg');
+  background-size: cover;
+}
+.move-img {
+  background-image: url('../assets/move.jpg');
+  background-size: cover;
+}
+.driver-img {
+  background-image: url('../assets/driver.jpg');
+  background-size: cover;
 }
 </style>
