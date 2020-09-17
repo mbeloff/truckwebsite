@@ -78,11 +78,7 @@ body {
   // padding-top: 100px;
 }
 
-.big-title {
-  color: rgb(240, 235, 231);
-  font-size: calc(40px + (100 - 40) * ((100vw - 300px) / (1600 - 300)));
-  font-variation-settings: 'wght' 700;
-}
+
 
 .title {
   color: var(--dark-color);

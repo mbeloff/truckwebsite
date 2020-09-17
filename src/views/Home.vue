@@ -202,19 +202,19 @@
 
 <script>
 // @ is an alias to /src
-import Faq from "@/components/Faq.vue";
+import Faq from '@/components/Faq.vue'
 export default {
   components: { Faq },
-  name: "Home",
+  name: 'Home',
   methods: {
     show() {
-      this.$modal.show("modal");
+      this.$modal.show('modal')
     },
     hide() {
-      this.$modal.hide("modal");
+      this.$modal.hide('modal')
     }
   }
-};
+}
 </script>
 <style lang="scss">
 .home {
@@ -225,6 +225,12 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50%;
+}
+
+.big-title {
+  color: rgb(245, 240, 236);
+  font-size: calc(40px + (100 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-variation-settings: 'wght' 700;
 }
 
 .intro-text {
