@@ -31,7 +31,7 @@ export default {
         isUsingVueRouter: true,
         mobileBreakpoint: 992,
         brandImagePath: "./",
-        brandImage: require("../assets/logo-sm.svg"),
+        brandImage: require("../assets/wlogo.svg"),
         brandImageAltText: "brand-image",
         collapseButtonOpenColor: "black",
         collapseButtonCloseColor: "black",
@@ -39,56 +39,53 @@ export default {
         ariaLabelMainNav: "Main Navigation",
         tooltipAnimationType: "shift-away",
         menuOptionsLeft: [
+          // {
+          //   type: "link",
+          //   text: "Truck Hire",
+          //   arrowColor: "orange",
+          //   subMenuOptions: [
+          //     {
+          //       isLinkAction: true,
+          //       type: "link",
+          //       text: "Truck Rental",
+          //       subText: "Best price truck rental. No truck licence needed.",
+          //       path: { name: "home" },
+          //       iconLeft: '<i class="fal fa-truck fa-fw"></i>'
+          //     },
+          //     {
+          //       type: "hr"
+          //     },
+          //     {
+          //       isLinkAction: true,
+          //       type: "link",
+          //       text: "Truck & Driver",
+          //       subText: "Do the packing yourself and let us do the driving.",
+          //       path: { name: "home" },
+          //       iconLeft: '<i class="fal fa-user-alt fa-fw"></i>'
+          //     },
+          //     {
+          //       type: "hr"
+          //     },
+          //     {
+          //       isLinkAction: true,
+          //       type: "link",
+          //       text: "Truck & Movers",
+          //       subText:
+          //         "Let us do the heavy lifting and get your things where the need to go.",
+          //       path: { name: "home" },
+          //       iconLeft: '<i class="fal fa-people-carry fa-fw"></i>'
+          //     }
+          //   ]
+          // },
           {
             type: "link",
-            text: "Truck Hire",
-            arrowColor: "orange",
-            subMenuOptions: [
-              {
-                isLinkAction: true,
-                type: "link",
-                text: "Truck Rental",
-                subText: "Best price truck rental. No truck licence needed.",
-                path: { name: "about" },
-                iconLeft: '<i class="fal fa-truck fa-fw"></i>'
-              },
-              {
-                type: "hr"
-              },
-              {
-                type: "link",
-                text: "Truck & Driver",
-                subText: "Do the packing yourself and let us do the driving.",
-                path: { name: "locations" },
-                iconLeft: '<i class="fal fa-user-alt fa-fw"></i>'
-              },
-              {
-                type: "hr"
-              },
-              {
-                type: "link",
-                text: "Truck & Movers",
-                subText:
-                  "An extra pair of hands to help load and get your things where the need to go.",
-                path: { name: "blog" },
-                iconLeft: '<i class="fal fa-people-carry fa-fw"></i>'
-              }
-            ]
-          },
-          {
-            type: "link",
-            text: "About",
+            text: "Contact",
             arrowColor: "orange",
             subMenuOptions: [
               {
                 type: "link",
                 text: "About Us",
-                path: { name: "about-us" }
-              },
-              {
-                type: "link",
-                text: "FAQ",
-                path: { name: "faq" }
+                path: { name: "About" }
               },
               {
                 type: "hr"
@@ -96,7 +93,7 @@ export default {
               {
                 type: "link",
                 text: "Contact",
-                path: { name: "contact" },
+                path: { name: "Contact" },
                 iconLeft: '<i class="fal fa-comment-alt-lines fa-fw"></i>'
               }
             ]

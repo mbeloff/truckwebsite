@@ -48,7 +48,8 @@ body {
   --secondary: #00c4a3;
   --dark-color: #6d2c31;
   --light-color: #ff9939;
-  --bg-dark: #1e2a3b;
+  --bg-dark: hsl(216, 30%, 24%);
+  scroll-behavior: smooth;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@531&display=swap");
@@ -66,7 +67,7 @@ body {
   text-align: left;
   color: #2c3e50;
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto 1fr auto;
 }
 
 #nav {

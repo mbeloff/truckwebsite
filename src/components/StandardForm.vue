@@ -98,7 +98,7 @@
               color="teal"
               :masks="{ L: 'MMM DD' }"
               :input-props="{
-                class: 'form-control border-0 bg-white px-0',
+                class: 'form-control custom-input bg-white px-0',
                 placeholder: 'Pickup/Dropoff Dates',
                 readonly: true
               }"
@@ -161,7 +161,7 @@
               color="teal"
               :masks="{ L: 'DD/MM/YY' }"
               :input-props="{
-                class: 'form-control border-0 bg-white px-0',
+                class: 'form-control custom-input bg-white px-0',
                 placeholder: 'Licence Expiry',
                 readonly: true
               }"
@@ -198,7 +198,7 @@
       </div>
 
       <div class="row mt-2">
-        <label class="col-12" for="featuresChecklist">Added Extras</label>
+        <label class="col-12" for="featuresChecklist">Moving Equipment</label>
         <div class="col-12 col-md-6">
           <input
             class="mr-2 ml-2"
@@ -269,7 +269,7 @@
           class="btn btn-submit text-uppercase"
           aria-label="Submit"
         >
-          <p class="gradient-slide mb-0">
+          <p class="mb-0">
             <i class="fa fa-paper-plane mr-1 d-inline"></i> Submit
           </p>
         </button>
@@ -340,9 +340,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .secondary {
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 .check-grid {
@@ -350,33 +350,48 @@ export default {
   grid-template-columns: 2rem 1fr;
 }
 
-.sub-title {
-  font-variation-settings: "wght" 200;
-  color: var(--secondary);
-}
+// .sub-title {
+//   font-variation-settings: "wght" 200;
+//   color: var(--secondary);
+// }
 
 .form {
-  background: rgb(33, 33, 36);
+  // background: rgb(255, 255, 255);
 }
 
 .form label {
   font-family: Arial;
-  font-variation-settings: "wght" 200;
-  font-size: 1rem;
-  color: rgb(139, 151, 146);
-  &.underlabel {
-    font-size: 0.75rem;
-    color: var(--secondary);
-  }
+  // font-weight: bold;
+  // font-variation-settings: "wght" 200;
+  // font-size: 1rem;
+  color: rgb(80, 80, 80);
 }
 
 .form-control {
   background: rgb(255, 255, 255);
-  padding-left: 2.4rem;
+  padding-left: 2.4rem !important;
   span {
     width: 100%;
-    padding-right: 4.5rem;
+    // padding-right: 4.5rem;
   }
+}
+
+input.custom-input {
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  width: calc(100% - 4.5rem);
+}
+
+input.vc-w-full {
+  width: calc(100% - 4.5rem);
+  padding-left: 0;
+}
+
+input.vc-border {
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
 }
 
 .form-control::placeholder {
@@ -421,20 +436,22 @@ select::placeholder {
 }
 
 .btn-close {
-  color: var(--secondary);
+  color: var(--primary);
 }
 
-.btn-submit {
-  color: var(--secondary);
-  border: var(--secondary) 0.5px solid;
-  border-radius: 20px;
-  // font-weight: 100;
-  &:hover,
-  &:focus {
-    background: var(--secondary);
-    color: white !important;
-    // transform: scale(1.02);
-    transition: transform 0.1s cubic-bezier(0.5, -0.24, 0.5, 3.21);
+.form {
+  .btn-submit {
+    color: var(--primary);
+    border: var(--primary) 1px solid;
+    border-radius: 20px;
+    // font-weight: 100;
+    &:hover,
+    &:focus {
+      background: var(--primary);
+      color: white !important;
+      // transform: scale(1.02);
+      transition: transform 0.1s cubic-bezier(0.5, -0.24, 0.5, 3.21);
+    }
   }
 }
 

@@ -14,13 +14,13 @@
 export default {
   methods: {
     show() {
-      this.$modal.show("modal");
+      this.$modal.show('modal')
     },
     hide() {
-      this.$modal.hide("modal");
+      this.$modal.hide('modal')
     }
   }
-};
+}
 </script>
 
 <style scoped lang="scss">

@@ -164,38 +164,36 @@
     </div>
     <div class="py-5">
       <div class="container text-left">
-        <h2 class="title">
-          Our Trucks<a
-            href="javascript:void(0)"
-            @click="show()"
-            class="btn btn-grad ml-3 mb-2"
-            >Get a Quote</a
-          >
-        </h2>
-        <h4 class="sub-title">
-          Auto, 500kg Tailgate Lift, Open Car Licence OK
-        </h4>
-
         <div class="row">
           <div class="py-3 col-12 col-md-6">
+            <h2 class="title">
+              Our Trucks<a
+                href="javascript:void(0)"
+                @click="show()"
+                class="btn btn-grad ml-3 mb-2"
+                >Get a Quote</a
+              >
+            </h2>
+            <h4 class="sub-title">
+              Auto, 500kg Tailgate Lift, Open Car Licence OK
+            </h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Exercitationem earum, magni animi, sed recusandae sit mollitia,
               libero voluptatem qui eligendi fuga officia rerum! Quibusdam nam
               numquam quae totam atque nisi?
             </p>
-            <ul class="" style="font-size: 1.25rem">
-              <li>lorem</li>
-              <li>Ipsum dolor.</li>
-              <li>sit amet.</li>
-              <li>lorem</li>
-              <li>Ipsum dolor.</li>
-              <li>sit amet.</li>
-            </ul>
           </div>
           <div class="col-12 col-md-6">
             <img src="../assets/truck.jpg" alt="" class="img-fluid" />
           </div>
+        </div>
+        <div class="row">
+          <Faq
+            id="faq"
+            :content="'set1'"
+            :faqhead="'Frequently Asked Questions'"
+          ></Faq>
         </div>
       </div>
     </div>
@@ -204,8 +202,9 @@
 
 <script>
 // @ is an alias to /src
-
+import Faq from "@/components/Faq.vue";
 export default {
+  components: { Faq },
   name: "Home",
   methods: {
     show() {
@@ -325,13 +324,13 @@ export default {
   margin: auto;
   max-width: 1200px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
+  // grid-template-rows: 1fr 1fr;
+  // grid-template-columns: 1fr;
   grid-gap: 5rem;
   @media only screen and (min-width: 768px) {
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem;
+    // grid-template-columns: 1fr 1fr;
+    // grid-gap: 10rem;
   }
 }
 </style>
