@@ -283,61 +283,61 @@ export default {
   data() {
     return {
       form: this.$store.state.form
-    };
+    }
   },
   methods: {
     formatDate() {
       this.form.dateRangeShort =
         this.form.dateRange.start.toString().substring(0, 10) +
-        " to " +
-        this.form.dateRange.end.toString().substring(0, 10);
+        ' to ' +
+        this.form.dateRange.end.toString().substring(0, 10)
     },
     formatExp() {
       this.form.DlExpiryShort =
         this.form.DlExpiry.getDate() +
-        "/" +
+        '/' +
         this.form.DlExpiry.getMonth() +
-        "/" +
-        this.form.DlExpiry.getFullYear();
+        '/' +
+        this.form.DlExpiry.getFullYear()
     },
     hide() {
-      this.$store.commit("storeForm", this.form);
-      this.$modal.hide("modal");
+      this.$store.commit('storeForm', this.form)
+      this.$modal.hide('modal')
     },
     encode(data) {
       return Object.keys(data)
         .map(
           key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
         )
-        .join("&");
+        .join('&')
     },
     handleSubmit() {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
-          "form-name": "TruckRentalQuoteForm",
+          'form-name': 'TruckRentalQuoteForm',
           ...this.form
         })
       })
         .then(() => {
-          this.$router.push("success");
+          this.$router.push('success')
           // console.log('success')
-          this.$modal.hide("modal");
+          this.$modal.hide('modal')
         })
         .catch(() => {
-          this.$router.push("404");
+          this.$router.push('404')
           // console.log('failure')
-          this.$modal.hide("modal");
-        });
+          this.$modal.hide('modal')
+        })
     }
   },
   mounted() {
     setTimeout(() => {
-      this.$refs.name.focus();
-    }, 500);
+      this.$refs.name.focus()
+    }, 500)
   }
-};
+}
 </script>
 
 <style lang="scss">
@@ -381,6 +381,7 @@ input.custom-input {
   border-left: none;
   border-right: none;
   width: calc(100% - 4.5rem);
+  padding-left: 0 !important;
 }
 
 input.vc-w-full {
