@@ -25,6 +25,12 @@
             car licence. Need someone to drive or help load, we can even assist
             with that - contact us today for a quote.
           </p>
+          <a
+                href="javascript:void(0)"
+                class="btn btn-grad font-weight-bold"
+                @click="showDriver()"
+                >Get a Quote</a
+              >
         </div>
         <div class="col-12 col-md-6 mb-5 my-md-auto">
           <img class="img-fluid" src="../assets/cheap-truck-hire-brisbane.jpg" alt="" />
