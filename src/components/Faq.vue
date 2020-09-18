@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import Faqitem from "@/components/Faqitem.vue";
+import Faqitem from '@/components/Faqitem.vue'
 export default {
   components: {
     Faqitem
@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     changeContent(set) {
-      this.selectedCategory = set;
+      this.selectedCategory = set
     }
   },
   data() {
@@ -47,7 +47,7 @@ export default {
         {
           id: 1,
           active: true,
-          title: "What sort of licence will I need?",
+          title: 'What sort of licence will I need?',
           details: `
         <p>If you are 25 years or older and have an open car licence you are good to go.</p>
       `
@@ -56,7 +56,7 @@ export default {
           id: 2,
           active: false,
           title:
-            "I’m a truck rookie, this is my first time. What do I need to know?",
+            'I’m a truck rookie, this is my first time. What do I need to know?',
           details: `
           <p>Our trucks are really easy to drive, but here are some tips </p>
         <ul>
@@ -73,31 +73,31 @@ export default {
         {
           id: 3,
           active: false,
-          title: "What are the truck rental charges?",
+          title: 'What are the truck rental charges?',
           details: `
         <p>That depends on where you are going and how long you need the truck for. Contact us for a quote but know this, we aim to do Brisbane’s best truckin’ deals!</p>
       `
         }
       ]
-    };
+    }
   },
   mounted() {
-    this.groupId = this.$el.id;
+    this.groupId = this.$el.id
   },
   computed: {
     getQuestions: function() {
-      if (this.selectedCategory == "set1") {
-        return this.set1;
-      } else if (this.selectedCategory == "set2") {
-        return this.set2;
-      } else if (this.selectedCategory == "set3") {
-        return this.set3;
+      if (this.selectedCategory == 'set1') {
+        return this.set1
+      } else if (this.selectedCategory == 'set2') {
+        return this.set2
+      } else if (this.selectedCategory == 'set3') {
+        return this.set3
       } else {
-        return this.set1;
+        return this.set1
       }
     }
   }
-};
+}
 </script>
 
 <style lang="scss">
@@ -122,6 +122,10 @@ $red: #cc4b37;
   dd {
     margin-left: 0;
   }
+}
+
+.accordion-item-title-text {
+  font-weight: bold;
 }
 
 .accordion-item-trigger,
