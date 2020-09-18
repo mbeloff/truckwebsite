@@ -26,14 +26,18 @@
             with that - contact us today for a quote.
           </p>
           <a
-                href="javascript:void(0)"
-                class="btn btn-grad font-weight-bold"
-                @click="showDriver()"
-                >Get a Quote</a
-              >
+            href="javascript:void(0)"
+            class="btn btn-grad font-weight-bold"
+            @click="showDriver()"
+            >Get a Quote</a
+          >
         </div>
         <div class="col-12 col-md-6 mb-5 my-md-auto">
-          <img class="img-fluid" src="../assets/cheap-truck-hire-brisbane.jpg" alt="" />
+          <img
+            class="img-fluid"
+            src="../assets/cheap-truck-hire-brisbane.jpg"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -198,7 +202,7 @@
                 <i class="fas fa-check-circle mr-2"></i
                 ><span
                   ><strong
-                    >20m³ Pantech Body<br />(4.2m long x 2.1m wide x 2.1m
+                    >20m³ Capacity<br />(4.2m long x 2.1m wide x 2.1m
                     high)</strong
                   ></span
                 >
@@ -238,7 +242,11 @@
             </ul>
           </div>
           <div class="col-12 col-md-6">
-            <img src="../assets/cheap-truck-rental-brisbane.jpg" alt="" class="img-fluid" />
+            <img
+              src="../assets/cheap-truck-rental-brisbane.jpg"
+              alt=""
+              class="img-fluid"
+            />
           </div>
         </div>
         <div class="row">
