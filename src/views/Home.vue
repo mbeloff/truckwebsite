@@ -202,8 +202,7 @@
                 <i class="fas fa-check-circle mr-2"></i
                 ><span
                   ><strong
-                    >20m³ Capacity<br />(4.2m long x 2.1m wide x 2.1m
-                    high)</strong
+                    >20m³ Capacity (4.2m long x 2.1m wide x 2.1m high)</strong
                   ></span
                 >
               </li>
