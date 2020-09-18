@@ -14,30 +14,30 @@
 </template>
 
 <script>
-import "vue-navigation-bar/dist/vue-navigation-bar.css";
+import 'vue-navigation-bar/dist/vue-navigation-bar.css'
 
 export default {
   methods: {
     vnbItemClicked(text) {
-      if (text === "Get a Quote") {
-        this.$modal.show("modal");
+      if (text === 'Get a Quote') {
+        this.$modal.show('modal')
       }
     }
   },
   data() {
     return {
       navbarOptions: {
-        elementId: "nav",
+        elementId: 'nav',
         isUsingVueRouter: true,
         mobileBreakpoint: 992,
-        brandImagePath: "./",
-        brandImage: require("../assets/wlogo.svg"),
-        brandImageAltText: "brand-image",
-        collapseButtonOpenColor: "black",
-        collapseButtonCloseColor: "black",
+        brandImagePath: './',
+        brandImage: require('../assets/wlogo.svg'),
+        brandImageAltText: 'brand-image',
+        collapseButtonOpenColor: 'black',
+        collapseButtonCloseColor: 'black',
         showBrandImageInMobilePopup: true,
-        ariaLabelMainNav: "Main Navigation",
-        tooltipAnimationType: "shift-away",
+        ariaLabelMainNav: 'Main Navigation',
+        tooltipAnimationType: 'shift-away',
         menuOptionsLeft: [
           // {
           //   type: "link",
@@ -78,22 +78,22 @@ export default {
           //   ]
           // },
           {
-            type: "link",
-            text: "Contact",
-            arrowColor: "orange",
+            type: 'link',
+            text: 'Contact',
+            arrowColor: 'orange',
             subMenuOptions: [
               {
-                type: "link",
-                text: "About Us",
-                path: { name: "About" }
+                type: 'link',
+                text: 'About Us',
+                path: { name: 'About' }
               },
               {
-                type: "hr"
+                type: 'hr'
               },
               {
-                type: "link",
-                text: "Contact",
-                path: { name: "Contact" },
+                type: 'link',
+                text: 'Contact',
+                path: { name: 'Contact' },
                 iconLeft: '<i class="fal fa-comment-alt-lines fa-fw"></i>'
               }
             ]
@@ -102,21 +102,21 @@ export default {
         menuOptionsRight: [
           {
             isLinkAction: true,
-            type: "button",
-            text: "Get a Quote",
-            path: "",
-            class: "btn btn-grad font-weight-bold",
+            type: 'button',
+            text: 'Get a Quote',
+            path: '',
+            class: 'btn btn-grad font-weight-bold',
             iconRight: '<i class="fal fa-comment-alt-lines fa-fw"></i>'
           }
         ]
       }
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="scss">
-@import "/path/to/node_modules/vue-navigation-bar.css";
+@import '/path/to/node_modules/vue-navigation-bar.css';
 .vnb {
   text-align: left;
   .custom-section-content {
@@ -163,6 +163,18 @@ export default {
       &__link {
         &:hover {
           border-left: 2px solid rgb(255, 104, 34);
+        }
+      }
+    }
+  }
+
+  &__popup {
+    &__bottom {
+      &__menu-options {
+        &__option {
+          &__link--no-highlight {
+            visibility: hidden;
+          }
         }
       }
     }
