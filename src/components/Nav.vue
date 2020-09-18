@@ -31,7 +31,7 @@ export default {
         isUsingVueRouter: true,
         mobileBreakpoint: 992,
         brandImagePath: './',
-        brandImage: require('../assets/w-truck-logo.png'),
+        brandImage: require('../assets/wlogo.svg'),
         brandImageAltText: 'brand-image',
         collapseButtonOpenColor: 'black',
         collapseButtonCloseColor: 'black',
@@ -123,9 +123,6 @@ export default {
     text-align: right;
     margin-left: auto;
     font-family: Helvetica;
-  }
-  &__brand-image-wrapper__link__image {
-    width: 100px;
   }
   .btn-grad {
     color: white !important;
