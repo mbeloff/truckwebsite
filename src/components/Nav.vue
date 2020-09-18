@@ -169,11 +169,30 @@ export default {
   }
 
   &__popup {
+    &__top {
+      padding: 1rem;
+    }
     &__bottom {
+      padding-top: 0;
+      padding-bottom: 0;
+      &__custom-section {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        .custom-section-content {
+          text-align: center;
+        }
+      }
       &__menu-options {
+        margin-bottom: 0;
         &__option {
+          text-align: center;
           &__link--no-highlight {
             visibility: hidden;
+            padding: 0 0 0 0;
+            height: 0;
           }
         }
       }
