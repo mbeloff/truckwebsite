@@ -27,7 +27,7 @@
           </p>
         </div>
         <div class="col-12 col-md-6 mb-5 my-md-auto">
-          <img class="img-fluid" src="../assets/truck.jpg" alt="" />
+          <img class="img-fluid" src="../assets/cheap-truck-hire-brisbane.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -174,10 +174,10 @@
               Auto, 500kg Tailgate Lift, Open Car Licence OK
             </h4>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Exercitationem earum, magni animi, sed recusandae sit mollitia,
-              libero voluptatem qui eligendi fuga officia rerum! Quibusdam nam
-              numquam quae totam atque nisi?
+              All Wicked Trucks are easy to drive make moving as easy as
+              possible. Economical, safe and able to be driven with just a
+              regular car licence. Rear tailgate lifter makes loading those
+              large, heavy items a breeze.
             </p>
             <ul class="list-unstyled checklist">
               <li class="list-item">
@@ -232,7 +232,7 @@
             </ul>
           </div>
           <div class="col-12 col-md-6">
-            <img src="../assets/truck.jpg" alt="" class="img-fluid" />
+            <img src="../assets/cheap-truck-rental-brisbane.jpg" alt="" class="img-fluid" />
           </div>
         </div>
         <div class="row">
