@@ -39,7 +39,6 @@
 
           <p>
             <b>Ph:</b> 1800 24 68 69 <br />
-            <b>email:</b> info@wickedtruckrentals.com
           </p>
         </div>
       </div>
