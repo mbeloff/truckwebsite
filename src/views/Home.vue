@@ -19,11 +19,11 @@
             Looking for the best rates on truck rental?
           </h5>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repudiandae, magnam? Accusamus iusto nostrum minus, modi reiciendis
-            consequatur veniam veritatis voluptatibus vel esse quidem a eligendi
-            quas. Alias eius amet incidunt beatae quam ratione illum
-            praesentium!
+            See Wicked Truck Rentals for great value moving truck hire. Our
+            fleet of modern trucks are all automatic and have a 500kg tailgate
+            lift. Easy drive and no truck licence needed, just a regular open
+            car licence. Need someone to drive or help load, we can even assist
+            with that - contact us today for a quote.
           </p>
         </div>
         <div class="col-12 col-md-6 mb-5 my-md-auto">
@@ -48,8 +48,8 @@
               <div>
                 <h3 class="py-3 text-left text-md-center">Truck & Driver</h3>
                 <p class="text-left">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Numquam debitis consectetur vel labore atque consequuntur.
+                  Load the truck yourself but leave the driving to us. We'll get
+                  your things where they need to go.
                 </p>
               </div>
               <a
@@ -76,8 +76,8 @@
               <div>
                 <h3 class="py-3 text-left text-md-center">Truck Rental</h3>
                 <p class="text-left">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Numquam debitis consectetur vel labore atque consequuntur.
+                  Easy DIY moving. Get the best rates on easy to drive moving
+                  trucks.
                 </p>
               </div>
               <a
@@ -100,10 +100,10 @@
             </div>
             <div class="card-body">
               <div>
-                <h3 class="py-3 text-left text-md-center">Truck & Mover</h3>
+                <h3 class="py-3 text-left text-md-center">Truck & Movers</h3>
                 <p class="text-left">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Numquam debitis consectetur vel labore atque consequuntur.
+                  Sit back and relax while we take care of all the driving and
+                  heavy lifting.
                 </p>
               </div>
               <a
@@ -179,6 +179,57 @@
               libero voluptatem qui eligendi fuga officia rerum! Quibusdam nam
               numquam quae totam atque nisi?
             </p>
+            <ul class="list-unstyled checklist">
+              <li class="list-item">
+                <i class="fas fa-check-circle mr-2"></i
+                ><span><strong>Drive On A Car Licence</strong></span>
+              </li>
+              <li>
+                <i class="fas fa-check-circle mr-2"></i
+                ><span><strong>Automatic</strong></span>
+              </li>
+              <li>
+                <i class="fas fa-check-circle mr-2"></i
+                ><span
+                  ><strong
+                    >20m³ Pantech Body<br />(4.2m long x 2.1m wide x 2.1m
+                    high)</strong
+                  ></span
+                >
+              </li>
+              <li>
+                <i class="fas fa-check-circle mr-2"></i
+                ><span
+                  ><strong>Fits an average 3 Bedroom Unit<br /></strong
+                ></span>
+              </li>
+              <li>
+                <i class="fas fa-check-circle mr-2"></i
+                ><span><strong>Late Model Trucks</strong></span>
+              </li>
+              <li>
+                <i class="fas fa-check-circle mr-2"></i
+                ><span><strong>500kg Rear Tailgate Lifter</strong></span>
+              </li>
+              <li>
+                <i class="fas fa-check-circle mr-2"></i
+                ><span><strong>Seats 3 Adults</strong></span>
+              </li>
+              <li>
+                <i class="fas fa-check-circle mr-2"></i
+                ><span><strong>Economical Diesel Engines</strong></span>
+              </li>
+              <li>
+                <i class="fas fa-check-circle mr-2"></i
+                ><span><strong>Air Con / CD / MP3 Player</strong></span>
+              </li>
+              <li>
+                <i class="fas fa-check-circle mr-2"></i
+                ><span
+                  ><strong>Trolley and Moving Blankets Available</strong></span
+                >
+              </li>
+            </ul>
           </div>
           <div class="col-12 col-md-6">
             <img src="../assets/truck.jpg" alt="" class="img-fluid" />
@@ -301,11 +352,15 @@ export default {
   background-size: cover;
 }
 .move-img {
-  background-image: url('../assets/move.jpg');
+  background-image: url('../assets/mover.png');
   background-size: cover;
 }
 .driver-img {
   background-image: url('../assets/driver.jpg');
   background-size: cover;
+}
+
+.checklist i {
+  color: var(--primary);
 }
 </style>
