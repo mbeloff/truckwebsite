@@ -19,11 +19,10 @@
             Looking for the best rates on truck rental?
           </h5>
           <p>
-            See Wicked Truck Rentals for great value moving truck hire. Our
-            fleet of modern trucks are all automatic and have a 500kg tailgate
-            lift. Easy drive and no truck licence needed, just a regular open
-            car licence. Need someone to drive or help load, we can even assist
-            with that - contact us today for a quote.
+            Want 250km per day included?<br>
+            Want damage waiver included?<br>
+            Want a 500kg tray lift included?<br>
+            What are you waiting for?
           </p>
           <a
             href="javascript:void(0)"
