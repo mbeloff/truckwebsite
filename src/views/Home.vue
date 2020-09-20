@@ -27,7 +27,7 @@
           <a
             href="javascript:void(0)"
             class="btn btn-grad font-weight-bold"
-            @click="showDriver()"
+            @click="show()"
             >Get a Quote</a
           >
         </div>
