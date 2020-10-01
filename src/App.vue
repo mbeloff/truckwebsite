@@ -4,7 +4,7 @@
 
     <modal
       name="modal"
-      height="auto"
+
       :scrollable="true"
       :adaptive="true"
       :clickToClose="false"
