@@ -19,9 +19,9 @@
             Looking for the best rates on truck rental?
           </h5>
           <p>
-            Want 250km per day included?<br>
-            Want damage waiver included?<br>
-            Want a 500kg tray lift included?<br>
+            Want 250km per day included?<br />
+            Want damage waiver included?<br />
+            Want a 500kg tray lift included?<br />
             What are you waiting for?
           </p>
           <a
@@ -300,6 +300,12 @@ export default {
   color: rgb(245, 240, 236);
   font-size: calc(40px + (100 - 40) * ((100vw - 300px) / (1600 - 300)));
   font-variation-settings: 'wght' 700;
+  span {
+    color: var(--primary);
+    background: white;
+    padding: 0 1.5rem;
+    clip-path: polygon(2rem 0%, 100% 0%, calc(100% - 2rem) 100%, 0% 100%);
+  }
 }
 
 .intro-text {
