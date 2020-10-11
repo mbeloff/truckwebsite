@@ -75,16 +75,12 @@ body {
   height: 100px;
 }
 
-.content {
-  // padding-top: 100px;
-}
-
 .title {
   color: var(--dark-color);
   font-weight: 600;
   font-variation-settings: 'wght' 700;
   font-size: 2.5rem;
-  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1200 - 300)));
 }
 
 .sub-title {

@@ -126,6 +126,7 @@ $red: #cc4b37;
 
 .accordion-item-title-text {
   font-weight: bold;
+  max-width: calc(100% - 40px)
 }
 
 .accordion-item-trigger,

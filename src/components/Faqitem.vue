@@ -35,29 +35,29 @@
 
 <script>
 export default {
-  props: ["item", "multiple", "groupId"],
+  props: ['item', 'multiple', 'groupId'],
   methods: {
     toggle(event) {
-      if (this.multiple) this.item.active = !this.item.active;
+      if (this.multiple) this.item.active = !this.item.active
       else {
         this.$parent.$children.forEach(item => {
           if (
             item.$el.id === event.currentTarget.parentElement.parentElement.id
           )
-            item.item.active = !item.item.active;
-          else item.item.active = false;
-        });
+            item.item.active = !item.item.active
+          else item.item.active = false
+        })
       }
     },
     startTransition(el) {
-      el.style.height = el.scrollHeight + "px";
+      el.style.height = el.scrollHeight + 'px'
     },
 
     endTransition(el) {
-      el.style.height = "";
+      el.style.height = ''
     }
   }
-};
+}
 </script>
 
 <style></style>

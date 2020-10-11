@@ -298,7 +298,7 @@ export default {
 
 .big-title {
   color: rgb(245, 240, 236);
-  font-size: calc(40px + (100 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
   font-variation-settings: 'wght' 700;
   span {
     color: var(--primary);
