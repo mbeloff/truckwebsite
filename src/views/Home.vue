@@ -1,12 +1,17 @@
 <template>
   <div>
-    <div class="home d-flex flex-column flex-center py-5">
-      <div class="container my-auto">
-        <h1
-          class="big-title font-weight-bold text-left d-inline-block font-italic"
-        >
-          Best <span>Truckin'</span> Deals in Brisbane
-        </h1>
+    <div class="home">
+      <div class="container my-auto h-100 py-5 position-relative">
+        <div class="my-auto ">
+          <h1
+            class="big-title font-weight-bold text-left d-inline-block font-italic"
+          >
+            Best <span>Truckin'</span> Deals in Brisbane
+          </h1>
+        </div>
+        <div class="rounded-circle position-absolute starburst">
+          <img class="img-fluid" src="../assets/3hour.svg" alt="" />
+        </div>
       </div>
     </div>
     <div class="container">
@@ -134,10 +139,10 @@
         <div class="">
           <h2 class="font-weight-bold text-left">Brisbane</h2>
           <h6 class="text-left mb-3">
-            46 Deshon St, Woolloongabba
+            100 Longlands St, Woolloongabba
           </h6>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d859.6296790383419!2d153.04380082481438!3d-27.49182236292564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a40d59fd803%3A0xbb2b9652a52d897c!2s46%20Deshon%20St%2C%20Woolloongabba%20QLD%204102!5e0!3m2!1sen!2sau!4v1599104574558!5m2!1sen!2sau"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.286743752041!2d153.04186376505737!3d-27.491456432881755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a40d28d9ccb%3A0x2f93bd23fe7dd95a!2s100%20Longlands%20St%2C%20Woolloongabba%20QLD%204102!5e0!3m2!1sen!2sau!4v1602457761507!5m2!1sen!2sau"
             width="100%"
             height="300"
             frameborder="0"
@@ -191,7 +196,7 @@
             <ul class="list-unstyled checklist">
               <li class="list-item">
                 <i class="fas fa-check-circle mr-2"></i
-                ><span><strong>Drive On A Car Licence</strong></span>
+                ><span><strong>Drive on an Open Car Licence</strong></span>
               </li>
               <li>
                 <i class="fas fa-check-circle mr-2"></i
@@ -289,11 +294,21 @@ export default {
 .home {
   min-height: 300px;
   max-height: 100vh;
-  // background-image: linear-gradient(30deg, #fcb141, rgb(255, 45, 17));
   background: var(--bg-dark);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50%;
+  .container {
+    height: 100% !important;
+    min-height: 300px;
+  }
+}
+
+.starburst {
+  right: 1rem;
+  bottom: -3rem;
+  width: 250px;
+  @media only screen and (max-width: 380px) {
+    width: 200px;
+    bottom: -4rem;
+  }
 }
 
 .big-title {
