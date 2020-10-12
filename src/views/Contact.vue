@@ -102,7 +102,7 @@
       </div>
     </div>
 
-    <div class="row bg-light mt-5 py-5">
+    <div class="bg-light mt-5 py-5">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 ">
@@ -123,19 +123,19 @@
               <b>email:</b> info@wickedtruckrentals.com
             </p>
           </div>
-           <div class="col-12 col-md-6">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.286743752041!2d153.04186376505737!3d-27.491456432881755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a40d28d9ccb%3A0x2f93bd23fe7dd95a!2s100%20Longlands%20St%2C%20Woolloongabba%20QLD%204102!5e0!3m2!1sen!2sau!4v1602457761507!5m2!1sen!2sau"
-            width="100%"
-            height="300"
-            frameborder="0"
-            style="border:0;"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-            class="border"
-          ></iframe>
-        </div>
+          <div class="col-12 col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.286743752041!2d153.04186376505737!3d-27.491456432881755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a40d28d9ccb%3A0x2f93bd23fe7dd95a!2s100%20Longlands%20St%2C%20Woolloongabba%20QLD%204102!5e0!3m2!1sen!2sau!4v1602457761507!5m2!1sen!2sau"
+              width="100%"
+              height="300"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+              class="border"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
