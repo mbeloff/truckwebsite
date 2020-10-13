@@ -317,9 +317,9 @@ export default {
   font-variation-settings: 'wght' 700;
   span {
     color: var(--primary);
-    background: white;
-    padding: 0 1.5rem;
-    clip-path: polygon(2rem 0%, 100% 0%, calc(100% - 2rem) 100%, 0% 100%);
+    // background: white;
+    // padding: 0 1.5rem;
+    // clip-path: polygon(2rem 0%, 100% 0%, calc(100% - 2rem) 100%, 0% 100%);
   }
 }
 
