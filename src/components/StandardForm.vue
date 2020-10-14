@@ -1,5 +1,5 @@
 <template>
-  <div class="form col-12 pt-1 pb-3">
+  <div class="form bg-light col-12 pt-1 pb-3">
     <form
       name="TruckQuote"
       method="post"
@@ -200,8 +200,23 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-md-12 form-group g-mb-40">
+          <label class="sr-only">Enter additional comments here</label>
+
+          <textarea
+            class="form-control"
+            rows="4"
+            placeholder="Please enter any additional information or requests here ..."
+            aria-label="Type your enquiry here"
+            name="comment"
+            v-model="form.comment"
+          ></textarea
+          ><i class="form-icon fal fa-comment-alt-lines"></i>
+        </div>
+      </div>
       <div class="row mt-2">
-        <label class="col-12" for="featuresChecklist">Moving Equipment</label>
+        <p class="col-12 secondary" for="featuresChecklist">Moving Equipment</p>
         <div class="col-12 col-md-6">
           <input
             class="mr-2 ml-2"
@@ -221,22 +236,6 @@
             v-model="form.requestedFeatures"
           />
           <label for="blankets">Blankets ($5/ea)</label>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12 form-group g-mb-40">
-          <label class="sr-only">Enter additional comments here</label>
-
-          <textarea
-            class="form-control"
-            rows="4"
-            placeholder="Please enter any additional information or requests here ..."
-            aria-label="Type your enquiry here"
-            name="comment"
-            v-model="form.comment"
-          ></textarea
-          ><i class="form-icon fal fa-comment-alt-lines"></i>
         </div>
       </div>
       <div class="row">
@@ -344,8 +343,9 @@ export default {
 </script>
 
 <style lang="scss">
-.secondary {
-  color: var(--primary);
+.form {
+  --secondary: rgb(255, 115, 0);
+  --primary: rgb(51, 77, 163);
 }
 
 .check-grid {
@@ -360,6 +360,10 @@ export default {
 
 .form {
   // background: rgb(255, 255, 255);
+  .sub-title {
+    font-size: 1.25rem;
+    color: unset;
+  }
 }
 
 .form label {
@@ -416,7 +420,7 @@ select.form-control {
 
 .form-control:focus + .form-icon,
 .form-control:hover + .form-icon {
-  transform: scale(1.5);
+  transform: scale(1.3);
   color: var(--secondary);
 }
 
@@ -428,7 +432,7 @@ select.form-control {
 }
 
 .date-picker:hover + .form-icon {
-  transform: scale(1.5);
+  transform: scale(1.3);
   color: var(--secondary);
 }
 
