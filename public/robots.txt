@@ -3,6 +3,5 @@ Allow: /$
 Allow: /contact
 Allow: /about
 Allow: /sitemap.xml
-Disallow: /*
 Disallow: /success
 Disallow: /404
