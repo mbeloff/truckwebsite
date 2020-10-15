@@ -6,22 +6,18 @@
       id="TruckQuote"
       action="/success"
       data-netlify="true"
-      data-netlify-honeypot="bot-field"
       @submit.prevent="handleSubmit"
     >
       <p class="sub-title">
-        <a class="btn-close far fa-times float-right p-2" @click="hide()"></a>
+        <a
+          class="btn-close far fa-times fa-2x float-right p-2 ml-3"
+          @click="hide()"
+        ></a>
         <span
           >Please leave your details and and we'll get back to you with a
           quote.</span
         >
       </p>
-      <input
-        type="text"
-        class="invisible py-0"
-        name="bot-field"
-        style="height: 0"
-      />
 
       <div class="row">
         <div class="col-md-12 form-group">
@@ -216,8 +212,10 @@
         </div>
       </div>
       <div class="row mt-2">
-        <p class="col-12 secondary" for="featuresChecklist">Moving Equipment</p>
-        <div class="col-12 col-md-6">
+        <p class="col-12 secondary mb-1" for="featuresChecklist">
+          Moving Equipment
+        </p>
+        <div class="col-12 col-md-6 form-group check-group mb-0">
           <input
             class="mr-2 ml-2"
             type="checkbox"
@@ -227,7 +225,7 @@
           />
           <label for="trolley">Trolley ($25/ea)</label>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 form-group check-group">
           <input
             class="mr-2 ml-2"
             type="checkbox"
@@ -239,12 +237,10 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12">
-          <p class="secondary">
-            Do you need someone to drive, or assist with moving? We can help
-          </p>
-        </div>
-        <div class="col-12 col-md-6">
+        <p class="secondary col-12 mb-1">
+          Do you need someone to drive, or assist with moving? We can help
+        </p>
+        <div class="col-12 col-md-6 form-group check-group mb-0">
           <input
             class="mr-2 ml-2"
             type="checkbox"
@@ -254,7 +250,7 @@
           />
           <label for="driver">Yes, I need a Driver</label>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 form-group check-group">
           <input
             class="mr-2 ml-2"
             type="checkbox"
@@ -353,25 +349,22 @@ export default {
   grid-template-columns: 2rem 1fr;
 }
 
-// .sub-title {
-//   font-variation-settings: "wght" 200;
-//   color: var(--secondary);
-// }
+.check-group label {
+  margin-bottom: 0;
+}
 
 .form {
-  // background: rgb(255, 255, 255);
   .sub-title {
     font-size: 1.25rem;
     color: unset;
   }
-}
-
-.form label {
-  font-family: Arial;
-  // font-weight: bold;
-  // font-variation-settings: "wght" 200;
-  // font-size: 1rem;
-  color: rgb(80, 80, 80);
+  p,
+  label {
+    font-family: Arial, sans-serif;
+  }
+  label {
+    color: rgb(68, 67, 67);
+  }
 }
 
 .form-control {
@@ -445,6 +438,9 @@ select::placeholder {
 
 .btn-close {
   color: var(--primary);
+  &:hover {
+    color: var(--secondary);
+  }
 }
 
 .form {

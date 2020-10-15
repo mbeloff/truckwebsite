@@ -39,7 +39,7 @@
         <div class="col-12 col-md-6 mb-5 my-md-auto">
           <img
             class="img-fluid"
-            src="../assets/cheap-truck-hire-brisbane.jpg"
+            src="../assets/cheap-truck-hire-brisbane-r.jpg"
             alt=""
           />
         </div>
@@ -54,7 +54,7 @@
               style="width: 100%; height: 100px; max-width: 200px;"
             >
               <div
-                class="rounded-circle circle-shadow m-auto position-absolute driver-img"
+                class="rounded-circle circle-shadow m-auto position-absolute driver-img circle-img"
                 style="left: 0; bottom: 0; height: 200px; width: 200px;"
               ></div>
             </div>
@@ -80,7 +80,7 @@
               style="width: 100%; height: 100px; max-width: 200px;"
             >
               <div
-                class="rounded-circle bg-white circle-shadow m-auto position-absolute diy-img"
+                class="rounded-circle bg-white circle-shadow m-auto position-absolute diy-img circle-img"
                 src="../assets/drawkit/VAN.svg"
                 alt=""
                 style="left: 0; bottom: 0; height: 200px; width: 200px;"
@@ -108,7 +108,7 @@
               style="width: 100%; height: 100px; max-width: 200px;"
             >
               <div
-                class="rounded-circle bg-white circle-shadow m-auto position-absolute move-img"
+                class="rounded-circle bg-white circle-shadow m-auto position-absolute move-img circle-img"
                 style="left: 0; bottom: 0; height: 200px; width: 200px;"
               ></div>
             </div>
@@ -246,7 +246,7 @@
           </div>
           <div class="col-12 col-md-6">
             <img
-              src="../assets/cheap-truck-rental-brisbane.jpg"
+              src="../assets/cheap-truck-rental-brisbane-r.jpg"
               alt=""
               class="img-fluid"
             />
@@ -317,9 +317,6 @@ export default {
   font-variation-settings: 'wght' 700;
   span {
     color: var(--primary);
-    // background: white;
-    // padding: 0 1.5rem;
-    // clip-path: polygon(2rem 0%, 100% 0%, calc(100% - 2rem) 100%, 0% 100%);
   }
 }
 
@@ -337,9 +334,16 @@ export default {
   transform: translate(-50%, 50%);
 }
 
+.vm--overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+.vm--modal {
+  box-shadow: 0 20px 60px -2px rgba(27, 33, 58, 0.678);
+  border-radius: 0.5rem;
+}
+
 .card-wrapper {
   margin: auto;
-  // max-width: 1000px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
@@ -370,27 +374,32 @@ export default {
   margin: auto;
   max-width: 1200px;
   display: grid;
-  // grid-template-rows: 1fr 1fr;
-  // grid-template-columns: 1fr;
   grid-gap: 5rem;
   @media only screen and (min-width: 768px) {
     grid-template-rows: 1fr;
-    // grid-template-columns: 1fr 1fr;
-    // grid-gap: 10rem;
   }
 }
-
-.diy-img {
-  background-image: url('../assets/diy.jpg');
-  background-size: cover;
-}
-.move-img {
-  background-image: url('../assets/mover.png');
-  background-size: cover;
-}
-.driver-img {
-  background-image: url('../assets/driver.jpg');
-  background-size: cover;
+.card {
+  .diy-img {
+    background-image: url('../assets/diy.jpg');
+  }
+  .move-img {
+    background-image: url('../assets/mover.jpg');
+  }
+  .driver-img {
+    background-image: url('../assets/driver.jpg');
+  }
+  .circle-img {
+    filter: grayscale(0.7);
+    background-size: cover;
+    transition: filter 0.5s, transform 0.25s ease-in-out;
+  }
+  &:hover {
+    .circle-img {
+      filter: grayscale(0);
+      transform: scale(1.015);
+    }
+  }
 }
 
 .checklist i {

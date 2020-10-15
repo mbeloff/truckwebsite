@@ -37,7 +37,7 @@ export default {
         collapseButtonCloseColor: 'black',
         showBrandImageInMobilePopup: true,
         ariaLabelMainNav: 'Main Navigation',
-        tooltipAnimationType: 'shift-away',
+        tooltipAnimationType: 'perspective',
         menuOptionsLeft: [
           // {
           //   type: "link",
@@ -119,6 +119,15 @@ export default {
 @import '/path/to/node_modules/vue-navigation-bar.css';
 .vnb {
   text-align: left;
+  padding-top: 0;
+  padding-bottom: 0;
+  &__brand-image-wrapper {
+    &__link {
+      &__image {
+        max-height: 48px;
+      }
+    }
+  }
   .custom-section-content {
     text-align: right;
     margin-left: auto;
@@ -142,7 +151,7 @@ export default {
     }
   }
   svg {
-    width: 20px !important;
+    width: 48px !important;
   }
   &__menu-options {
     &--left {
@@ -156,13 +165,29 @@ export default {
     &--right {
       margin-left: 1rem;
     }
+    &__option {
+      &__link {
+        font-size: 1.25rem;
+        &:hover {
+        }
+      }
+
+      &__arrow {
+        max-height: 10px !important;
+      }
+    }
   }
 
   &__sub-menu-options {
+    padding: 0;
+    hr {
+      margin: 0;
+    }
     &__option {
       &__link {
         &:hover {
           border-left: 2px solid rgb(255, 104, 34);
+          background-color: rgb(245, 239, 239);
         }
       }
     }
