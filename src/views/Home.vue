@@ -38,7 +38,7 @@
         </div>
         <div class="col-12 col-md-6 mb-5 my-md-auto">
           <img
-            class="img-fluid"
+            class="img-fluid lg-img"
             src="../assets/cheap-truck-hire-brisbane-r.jpg"
             alt=""
           />
@@ -248,7 +248,7 @@
             <img
               src="../assets/cheap-truck-rental-brisbane-r.jpg"
               alt=""
-              class="img-fluid"
+              class="img-fluid lg-img"
             />
           </div>
         </div>
@@ -299,6 +299,11 @@ export default {
     height: 100% !important;
     min-height: 300px;
   }
+}
+
+.lg-img {
+  width: 450px;
+  height: auto;
 }
 
 .starburst {
