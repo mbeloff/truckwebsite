@@ -1,4 +1,13 @@
 module.exports = {
+  pluginOptions: {
+    sitemap: {
+      urls: [
+        'https://wickedtruckrentals.com/',
+        'https://wickedtruckrentals.com/contact',
+        'https://wickedtruckrentals.com/about'
+      ]
+    }
+  },
   pages: {
     index: {
       // entry for the page
