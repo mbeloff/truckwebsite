@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /$
-Disallow: /*$
-Disallow: /NotFound
-Disallow: /Success
+Allow: /contact
+Allow: /about
+Disallow: /*
+Disallow: /success
+Disallow: /404
