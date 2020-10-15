@@ -94,7 +94,7 @@
               @input="formatDate"
               required
               readonly="true"
-              color="teal"
+              color="blue"
               :masks="{ L: 'MMM DD' }"
               :input-props="{
                 class: 'form-control custom-input bg-white px-0',
@@ -157,7 +157,7 @@
               @input="formatExp"
               required
               readonly="true"
-              color="teal"
+              color="blue"
               :masks="{ L: 'DD/MM/YY' }"
               :input-props="{
                 class: 'form-control custom-input bg-white px-0',
