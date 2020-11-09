@@ -4,6 +4,7 @@ const Home = () => import('../views/Home.vue')
 const Success = () => import('../views/Success.vue')
 const NotFound = () => import('../views/NotFound.vue')
 const Contact = () => import('../views/Contact.vue')
+const Privacy = () => import('../views/Privacy.vue')
 
 Vue.use(VueRouter)
 
@@ -26,6 +27,11 @@ const routes = [
     path: '/success',
     name: 'Success',
     component: Success
+  },
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: Privacy
   },
   {
     path: '/contact',

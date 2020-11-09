@@ -14,11 +14,6 @@ Vue.config.productionTip = false
 import VCalendar from 'v-calendar'
 Vue.use(VCalendar, {})
 
-// Vue.use(VueAnalytics, {
-//   id: 'UA-179401641-1',
-//   router
-// })
-
 Vue.use(VueGtm, {
   id: 'GTM-M2LB2K3',
   defer: false, // defaults to false. Script can be set to `defer` to increase page-load-time at the cost of less accurate results (in case visitor leaves before script is loaded, which is unlikely but possible)

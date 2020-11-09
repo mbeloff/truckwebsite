@@ -6,7 +6,11 @@
       ><!-- Custom Slot - Uncomment to use -->
       <template v-slot:custom-section>
         <div class="custom-section-content">
-          <h1 class="mb-0 font-weight-bold">1800 24 68 69</h1>
+          <a
+            href="tel:1800246869"
+            class="h1 mb-0 font-weight-bold text-decoration-none text-dark"
+            >1800 24 68 69</a
+          >
         </div>
       </template>
     </vue-navigation-bar>
