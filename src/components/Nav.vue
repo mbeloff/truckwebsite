@@ -8,7 +8,7 @@
         <div class="custom-section-content">
           <a
             href="tel:1800246869"
-            class="h1 mb-0 font-weight-bold text-decoration-none text-dark"
+            class="h1 mb-0 font-weight-bold text-decoration-none nav-number"
             >1800 24 68 69</a
           >
         </div>
@@ -136,6 +136,12 @@ export default {
     text-align: right;
     margin-left: auto;
     font-family: Helvetica;
+    .nav-number {
+      color: var(--dark-color);
+      &:hover {
+        color: var(--primary);
+      }
+    }
   }
   .btn-grad {
     color: white !important;
@@ -212,6 +218,12 @@ export default {
         padding-right: 0.5rem;
         .custom-section-content {
           text-align: center;
+          .nav-number {
+            color: rgb(34, 32, 32);
+            &:hover {
+              color: var(--primary);
+            }
+          }
         }
       }
       &__menu-options {
