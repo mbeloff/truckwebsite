@@ -238,7 +238,7 @@
       </div>
       <div class="row">
         <p class="secondary col-12 mb-1">
-          Do you need someone to drive, or assist with moving? We can help
+          Do you need a driver? We can help
         </p>
         <div class="col-12 col-md-6 form-group check-group mb-0">
           <input
@@ -250,7 +250,7 @@
           />
           <label for="driver">Yes, I need a Driver</label>
         </div>
-        <div class="col-12 col-md-6 form-group check-group">
+        <!-- <div class="col-12 col-md-6 form-group check-group">
           <input
             class="mr-2 ml-2"
             type="checkbox"
@@ -259,7 +259,7 @@
             v-model="form.removalistRequest"
           />
           <label for="mover">Yes, I need movers</label>
-        </div>
+        </div> -->
       </div>
       <div class="text-right mt-4">
         <button

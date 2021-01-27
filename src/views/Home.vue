@@ -102,7 +102,7 @@
               >
             </div>
           </div>
-          <div class="card position-relative">
+          <!-- <div class="card position-relative">
             <div
               class="img-wrapper m-auto position-relative"
               style="width: 100%; height: 100px; max-width: 200px;"
@@ -127,7 +127,7 @@
                 >Get a Quote</a
               >
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -350,12 +350,12 @@ export default {
 .card-wrapper {
   margin: auto;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
   grid-gap: 10rem;
   @media only screen and (min-width: 768px) {
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
   }
 }

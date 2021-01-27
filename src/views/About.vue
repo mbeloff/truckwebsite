@@ -9,8 +9,8 @@
             We're proud to offer the best value moving truck hire in Brisbane.
             Our fleet of trucks are modern, easy to drive and packed with great
             features as standard. Contact us today for simple, do-it-yourself
-            moving, or let us assist further with drivers & movers to make your
-            move as easy as possible.
+            moving, or let us assist further with drivers to make your move even
+            easier.
           </p>
         </div>
         <div class="col-12 col-md-6">
@@ -29,9 +29,7 @@
       </div>
       <div class="row">
         <div class="col-12 col-md-6">
-          <p>
-            <b>Address:</b><br />46 Deshon St, Woolloongabba <br />4102 QLD
-          </p>
+          <p><b>Address:</b><br />46 Deshon St, Woolloongabba <br />4102 QLD</p>
 
           <p>
             <b>Opening Hours:</b> <br />mon-fri: 9-4 <br />
