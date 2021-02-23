@@ -75,7 +75,7 @@ export default {
           active: false,
           title: 'What are the truck rental charges?',
           details: `
-        <p>That depends on where you are going and how long you need the truck for. Contact us for a quote but know this, we aim to do Brisbane’s best truckin’ deals!</p>
+<p>That depends on where you are going and how long you need the truck for. Contact us for a quote but know this, we aim to do Brisbane’s best truckin’ deals!</p><p>You may be required to pay a bond of $500 on pickup. This will be refunded when the truck in returned in a satisfactory condition. Please Note: In some cases bond refunds can take up to 30 Business Days to process from date of dropoff.</p>
       `
         }
       ]
