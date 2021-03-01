@@ -10,7 +10,7 @@
           </h1>
         </div>
         <div class="rounded-circle position-absolute starburst">
-          <img class="img-fluid" src="../assets/3hour.svg" alt="" />
+          <img class="img-fluid" src="../assets/4hour.svg" alt="" />
         </div>
       </div>
     </div>
