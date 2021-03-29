@@ -33,7 +33,7 @@
         <p>
           <strong>Company</strong> (referred to as either &quot;the
           Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in
-          this Agreement) refers to Wicked Truck Rentals, 46 Deshon St,
+          this Agreement) refers to Wicked Truck Rentals, 100 Longlands St,
           Woolloongabba QLD 4102.
         </p>
       </li>
@@ -448,7 +448,7 @@
         <p>
           By mail: <br />
           Wicked Truck Rentals <br />
-          46 Deshon St, <br />
+          100 Longlands St, <br />
           Woolloongabba QLD 4102
         </p>
       </li>
