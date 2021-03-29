@@ -158,8 +158,10 @@ $red: #cc4b37;
 .accordion-icon {
   transition: transform 0.5s ease;
   transform: rotate(0deg);
+  transform-origin: center;
   .is-active & {
     transform: rotate(90deg);
+    margin-left: -1px;
   }
 }
 
