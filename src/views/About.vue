@@ -9,8 +9,7 @@
             We're proud to offer the best value moving truck hire in Brisbane.
             Our fleet of trucks are modern, easy to drive and packed with great
             features as standard. Contact us today for simple, do-it-yourself
-            moving, or let us assist further with drivers to make your move even
-            easier.
+            moving.
           </p>
         </div>
         <div class="col-12 col-md-6">

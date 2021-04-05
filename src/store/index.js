@@ -18,7 +18,7 @@ export default new Vuex.Store({
       LicenceExpiryShort: '',
       DriversLicenceState: '',
       requestedFeatures: [],
-      removalistRequest: [],
+      // removalistRequest: [],
       comment: ''
     }
   },
@@ -26,9 +26,9 @@ export default new Vuex.Store({
     storeForm(state, n) {
       state.form = n
     },
-    storeRemovalist(state, n) {
-      state.form.removalistRequest = n
-    }
+    // storeRemovalist(state, n) {
+    //   state.form.removalistRequest = n
+    // }
   },
   actions: {},
   modules: {}
